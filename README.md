@@ -1,11 +1,9 @@
-# Bunny Havoc V36 — socos elásticos
+# Bunny Havoc — V37
 
-[Baixar o jogo completo em ZIP](https://github.com/Deriby/BunnyHavoc/raw/refs/heads/entrega-v36/Bunny_Havoc_V36_JOGAR.zip)
+Socos cartunescos com alcance bem menor e punhos menores. O último soco vai um pouco além do segundo. Mantidos giro → soco → soco, três corações e o restante da V36.
 
-Extraia o ZIP e abra `Bunny_Havoc_V36_Vila_JOGAR.html` no navegador. O jogo usa Three.js pelo CDN e precisa de acesso à internet.
+[Baixar o ZIP](https://github.com/Deriby/BunnyHavoc/raw/refs/heads/entrega-v37/Bunny_Havoc_V37_JOGAR.zip)
 
-O combo agora é giro → soco elástico → super soco: braço que estica, punho maior e recolhimento como mola, com alcance real a distância. J/Shift repetido ou toques na área de ataque encadeiam os três golpes. O último soco alcança mais longe; é possível mudar a direção entre golpes.
+Extraia o ZIP e abra `Bunny_Havoc_V37_Vila_JOGAR.html` no navegador. Precisa de internet para carregar o Three.js do CDN original. HTML e ZIP contêm o mesmo jogo completo; basta baixar um deles.
 
-Mantidos a vila viva, os Meowlin, os três corações e as duas fases jogáveis. Upgrades com cenouras continuam como proposta, sem compras ativas.
-
-[Versão anterior V35](https://github.com/Deriby/BunnyHavoc/tree/entrega-v35).
+J ou Shift: toque repetidamente para o combo. Segurar executa somente o giro. Os controles de movimento e salto permanecem iguais.
