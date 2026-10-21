@@ -1,11 +1,9 @@
-# Bunny Havoc V43 — praça, fachadas e interações
+# Bunny Havoc V44 — pulinho para trás ao receber dano
 
-Praça com mesa, bancos, mural, vasos e acabamento do passeio. As 23 casas ganham detalhes e emblemas dos cinco bairros, mantendo o estilo em blocos do jogo.
+Inimigos saem do chão num pulinho para trás ao receber os golpes iniciais ou um pisão, com sombra e aterrissagem. O urso pula menos, e o alvo continua perto para encaixar o próximo soco. A finalização mantém o arremesso forte e o dano extra. A vila aprimorada da V43 foi preservada.
 
-Experimente tocar o sino ao fundo da praça, girar o cata-vento e regar o canteiro. Aproxime-se e use E/Enter ou o botão da tela.
+[Baixar o jogo em ZIP](https://github.com/Deriby/BunnyHavoc/raw/refs/heads/entrega-v44/Bunny_Havoc_V44_JOGAR.zip)
 
-[Baixar o jogo em ZIP](https://github.com/Deriby/BunnyHavoc/raw/refs/heads/entrega-v43/Bunny_Havoc_V43_JOGAR.zip)
+Extraia o ZIP e abra `Bunny_Havoc_V44_Vila_JOGAR.html` no navegador. J/Shift repetido: giro → soco → soco final. O HTML contém o tema da vila e precisa acessar o CDN do Three.js, como nas versões anteriores.
 
-Extraia o ZIP e abra `Bunny_Havoc_V43_Vila_JOGAR.html` no navegador. O HTML contém o tema da vila e precisa acessar o CDN do Three.js, como nas versões anteriores.
-
-Verificados: interações e caminhos, teclado/toque, progressão/retorno das duas fases, guardiões, saves, música, ciclo dia/noite e prévia em retrato. Combate e cenas mantidos da V42.
+Verificados nas duas fases: pulinho, altura/recuo, aterrissagem, próximo soco, paredes, interrupções, sombras, recompensas, recuperação e arremesso final.
