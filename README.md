@@ -1,11 +1,11 @@
-# Bunny Havoc — V38
+# Bunny Havoc — V39
 
-Tema “Village – Where the sun shines” incorporado ao HTML, em loop na vila. Ciclo gradual de dia/noite de oito minutos, com lanternas e janelas iluminadas e pássaros em repouso à noite. Mantido o combate da V37.
+Combo giro → soco → soco final com animação corporal inspirada na referência do criador: trilhas roxas/brancas, braços curtos alternados, torção de tronco, apoio dos pés e finalização com maior impacto visual. Mantidos dano base e resistência dos inimigos.
 
-[Baixar o ZIP](https://github.com/Deriby/BunnyHavoc/raw/refs/heads/entrega-v38/Bunny_Havoc_V38_JOGAR.zip)
+[Baixar o ZIP](https://github.com/Deriby/BunnyHavoc/raw/refs/heads/entrega-v39/Bunny_Havoc_V39_JOGAR.zip)
 
-Extraia o ZIP e abra `Bunny_Havoc_V38_Vila_JOGAR.html` no navegador. Precisa de internet para carregar o Three.js do CDN original. A música já está dentro do HTML; não precisa de um MP3 separado. HTML e ZIP contêm o mesmo jogo completo; basta baixar um deles.
+Extraia e abra `Bunny_Havoc_V39_Vila_JOGAR.html` no navegador. O HTML contém o jogo completo e a música da vila; precisa de internet para carregar o Three.js do CDN original. Basta baixar o ZIP ou o HTML separado.
 
-A vila começa de manhã. O horário continua ao voltar das fases durante a sessão; recarregar o jogo reinicia de manhã. A música respeita o volume das opções. M ou o botão de música silencia/ativa o tema; se o navegador bloquear a reprodução automática, clique em Ouvir música.
+J/Shift: toques sucessivos para encadear os três golpes. Segurar executa somente o giro. Os socos dão passos curtos em chão seguro; no ar, não há passo automático. O controle de movimento e salto continua disponível.
 
-J ou Shift: toque repetidamente para o combo giro → soco → soco. Segurar executa somente o giro. Os controles de movimento e salto permanecem iguais.
+Mantidos três corações, modelos, fases, vila viva, música tema e ciclo de dia/noite da V38. O horário da vila é mantido durante a sessão; recarregar reinicia de manhã.
