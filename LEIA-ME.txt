@@ -1,0 +1,50 @@
+BUNNY HAVOC - CONTROLE INICIAL PARA GODOT 4
+
+Este pacote complementa a cena que voce ja criou; nao substitui o projeto.
+Use o modelo original Bunnyck e mantenha sua escala importada.
+
+1. Pare o jogo no Godot com F8.
+2. Extraia o ZIP e copie a pasta ControleInicial para a pasta do projeto,
+   junto de project.godot. No painel Arquivos do Godot, clique com o botao
+   direito em res:// e escolha abrir no gerenciador de arquivos.
+3. Volte ao Godot. Selecione Jogador na arvore da cena.
+4. No Inspetor, procure Script pelo campo de filtro. Arraste jogador.gd,
+   dentro de res://ControleInicial/, para o campo Script que esta vazio.
+5. Limpe o filtro, salve com Ctrl+S e execute a cena com F6.
+6. Clique na janela do jogo para ela receber as teclas.
+
+ARVORE DA CENA
+TesteFase1 (Node3D)
+  Chao (CSGBox3D, Use Collision ativo)
+  DirectionalLight3D
+  Camera3D (Current ativo)
+  Jogador (CharacterBody3D, com jogador.gd)
+    Visual (modelo bunnyck.glb, Position 0,0,0, escala importada)
+    CollisionShape3D (CapsuleShape3D)
+
+Capsula: Radius 0.4, Height 1.8, Position 0,0.9,0.
+Jogador: Position 0,0,0.
+Chao: Size 20,1,20, Position 0,-0.5,0.
+Camera: Position 0,7,10, Rotation -30,0,0.
+Os nomes Jogador e principalmente Visual devem seguir a arvore acima.
+
+TECLAS
+WASD ou setas: andar.
+K ou Ctrl, junto da direcao: correr.
+Espaco: pular. Correndo, o salto e mais alto como na Fase 1.
+
+Andar 6.4, correr 10.3, gravidade 24, impulso 10.1/12.8:
+parametros extraidos do jogo existente. A direcao diagonal e normalizada.
+O modelo gira na direcao do movimento; a camera acompanha X/Z e conserva
+altura e rotacao. Cair do piso de teste retorna ao ponto inicial.
+Esse retorno e apenas uma facilidade do teste, nao o sistema de vidas.
+
+ESCOPO DESTA ETAPA
+Bracos e pernas ainda ficam na pose parada. Animacoes, combate, coracoes,
+fases, cutscenes e exportacoes Windows/Web serao migrados gradualmente.
+Nada do jogo web ou do modelo foi alterado por este pacote.
+
+VALIDACAO
+Importacao do GLB e 17 verificacoes de fisica/teclas executadas no motor
+Godot 4.6.3, em modo headless. O usuario usa Godot 4.7.2; a conferencia
+visual e de controles nessa versao sera feita no computador dele.
