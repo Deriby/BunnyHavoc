@@ -1,0 +1,32 @@
+BUNNY HAVOC - SONS DE PULO
+
+1. Pare o jogo com F8.
+2. Extraia o ZIP e copie a pasta PulosBunnyck para a pasta do projeto,
+   junto de project.godot. Mantenha Pulos.tscn, pulos.gd e audio/ juntos.
+3. Volte ao Godot e espere importar os tres MP3.
+4. No painel Arquivos, abra res://PulosBunnyck/ e arraste Pulos.tscn
+   diretamente sobre o NOME Jogador na arvore da cena.
+
+   Jogador (CharacterBody3D)
+     Visual
+     CollisionShape3D
+     Passos
+     Pulos (AudioStreamPlayer)
+
+5. Salve com Ctrl+S. Execute com F6, ative Entrada e clique no jogo.
+6. Pule, aterrisse e pule de novo: Jump1 -> Jump2 -> Jump3 -> Jump1...
+
+O som toca no inicio do salto, nao ao simplesmente apertar Espaco no ar.
+Segurar Espaco nao repete o som. Pulo correndo tambem usa a sequencia.
+Nao toca ao apenas cair de uma borda. Sem Autoplay nem Loop.
+Os tres MP3 enviados foram copiados inteiros, sem conversao ou alteracao.
+
+VOLUME
+Selecione o no Pulos e ajuste Volume dB no Inspetor. Inicial -6 dB.
+0 dB aumenta; -12 dB diminui. As tres Amostras ja estao configuradas.
+
+Instale somente uma instancia de Pulos. O componente nao substitui nem
+altera os scripts de movimento, combo ou passos. O visual e a fisica seguem
+iguais. A sequencia continua entre saltos, inclusive depois de respawn.
+
+Para testar, use o modo Entrada da janela incorporada, em vez de 3D.
