@@ -1,0 +1,86 @@
+BUNNY HAVOC - MOVIMENTO, ANIMACOES E COMBO PARA GODOT 4
+
+Este pacote complementa a cena que voce ja criou; nao substitui o projeto.
+Use o modelo original Bunnyck e mantenha sua escala importada.
+
+1. Pare o jogo no Godot com F8.
+2. Extraia o ZIP. Abra ControleInicial e copie todo o seu conteudo:
+   jogador.gd, bunnyck_animacao.gd, bunnyck_combo.gd,
+   bunnyck_efeitos_combo.gd, a subpasta audio e este LEIA-ME.
+3. No painel Arquivos do Godot, clique com o botao direito no jogador.gd
+   que voce JA USA e abra sua localizacao no gerenciador de arquivos.
+4. Cole todo o conteudo novo nessa pasta, substituindo os arquivos antigos.
+   Na captura do usuario, o caminho era:
+   res://Bunnyck_Godot_Controle_Inicial/ControleInicial/
+   Se seu caminho for outro, use a pasta onde esta seu script atual.
+5. Volte ao Godot e aceite recarregar os arquivos se solicitado.
+   Salve com Ctrl+S e execute a cena com F6.
+6. Clique na janela do jogo para ela receber as teclas.
+
+O script ja esta anexado ao Jogador. Nesta atualizacao basta substituir
+os arquivos; animacao, combo, efeitos e audio sao carregados pelo controle.
+Mantenha os quatro .gd juntos, com a pasta audio ao lado deles.
+Se precisar conferir, jogador.gd deve estar somente no CharacterBody3D
+Jogador. O Node3D TesteFase1 deve ficar sem script.
+
+ARVORE DA CENA
+TesteFase1 (Node3D)
+  Chao (CSGBox3D, Use Collision ativo)
+  DirectionalLight3D
+  Camera3D (Current ativo)
+  Jogador (CharacterBody3D, com jogador.gd)
+    Visual (modelo bunnyck.glb, Position 0,0,0, escala importada)
+    CollisionShape3D (CapsuleShape3D)
+
+Capsula: Radius 0.4, Height 1.8, Position 0,0.9,0.
+Jogador: Position 0,0,0.
+Chao: Size 20,1,20, Position 0,-0.5,0.
+Camera: Position 0,7,10, Rotation -30,0,0.
+Os nomes Jogador e principalmente Visual devem seguir a arvore acima.
+
+TECLAS
+WASD ou setas: andar.
+K ou Ctrl, junto da direcao: correr.
+Espaco: pular. Correndo, o salto e mais alto como na Fase 1.
+J ou Shift: atacar. Aperte repetidamente para giro -> soco -> soco final.
+Segurar a tecla nao encadeia golpes. A direcao pode mudar entre os golpes.
+
+Andar 6.4, correr 10.3, gravidade 24, impulso 10.1/12.8:
+parametros extraidos do jogo existente. A direcao diagonal e normalizada.
+O modelo gira na direcao do movimento; a camera acompanha X/Z e conserva
+altura e rotacao. Cair do piso de teste retorna ao ponto inicial.
+Esse retorno e apenas uma facilidade do teste, nao o sistema de vidas.
+
+ESCOPO DESTA ETAPA
+Animacoes de andar/correr, bracos e pernas alternados, inclinacao e balanco
+do corpo, subida/queda, compressao da aterrissagem, orelhas, cauda,
+respiracao e piscadas: adaptadas do animator original da Fase 1.
+As duas palpebras sao as mesmas criadas pelo animator do jogo original.
+A animacao altera apenas o visual. A capsula e as regras fisicas ficam iguais.
+O GLB original e o jogo web nao foram modificados.
+O combo usa tempos 0.30/0.26/0.32, tolerancia para continuar, punho curto,
+fitas do giro, poses, sons, alcance e passos 0.22/0.28 do jogo original.
+Os passos respeitam piso continuo e paredes e nao criam investida no ar.
+Os sons sintetizados do combo agora sao cinco WAVs externos em audio/.
+O ganho, as duracoes e frequencias vem de snd() do jogo original;
+o renderizador de oscilador offline pode soar ligeiramente diferente do WebAudio.
+
+Esta cena ainda nao tem inimigos, caixas nem HUD de coracoes. Aqui voce
+confere a execucao dos golpes. A interface de acerto ja preserva dano
+1/1/2, pausa curta e identificacao do finalizador para ligar aos inimigos
+na etapa seguinte. O arremesso real depende da migracao dos inimigos.
+Saude, fases, cutscenes e exportacoes Windows/Web continuam pendentes.
+
+VALIDACAO
+22 verificacoes de movimento e 25 de combo passaram no Godot 4.6.3 headless.
+980 poses de locomocao e 390 quadros de combo foram comparados com as fontes
+literais Three.js. Poses e matrizes visiveis diferiram menos de 0.000001.
+O alvo de dano do teste e apenas um Node3D sintetico, sem inimigos portados.
+Os WAVs foram importados no motor; audicao e aspecto no Godot 4.7.2 ainda
+serao conferidos pelo usuario no Windows.
+
+VOLTA PARA A ETAPA ANTERIOR
+O pacote anterior, com locomocao animada sem combo, continua disponivel em:
+https://github.com/Deriby/BunnyHavoc/raw/refs/heads/entrega-godot-animacoes/Bunnyck_Godot_Animacoes.zip
+Para restaurar, pare com F8 e recoloque jogador.gd e bunnyck_animacao.gd
+desse pacote na mesma pasta. Eles nao dependem do combo nem de audio/.
