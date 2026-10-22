@@ -1,0 +1,35 @@
+BUNNY HAVOC - PASSINHOS
+
+Este componente adiciona o audio enviado pelo usuario, sem substituir os
+scripts do jogador, combo ou animacoes.
+
+1. Pare o jogo com F8.
+2. Extraia o ZIP e copie a pasta PassosBunnyck para a pasta do projeto,
+   junto de project.godot. Mantenha passos.gd, Passos.tscn e audio/ juntos.
+3. Volte ao Godot e espere importar os quatro WAVs.
+4. No painel Arquivos, abra res://PassosBunnyck/ e arraste Passos.tscn
+   sobre Jogador na arvore da cena. Ele deve aparecer como filho:
+
+   Jogador (CharacterBody3D)
+     Visual
+     CollisionShape3D
+     Passos (AudioStreamPlayer)
+
+5. Salve com Ctrl+S, execute com F6, ative Entrada no topo e clique no jogo.
+6. Ande e corra com WASD/setas e K. Espaco pula.
+
+VOLUME
+Selecione o no Passos e ajuste Volume dB no Inspetor. Comeca em -6 dB.
+0 dB fica mais alto; -12 dB fica mais baixo. Nao ative Autoplay nem Loop.
+
+COMPORTAMENTO
+Toca um som curto a cada contato das passadas da animacao. A corrida tem
+mais contatos e toca mais rapido. Fica silencioso parado, no ar, durante
+ataques e ao empurrar uma parede sem se deslocar.
+Os quatro sons alternam, extraidos do arquivo Passinhos.wav de 4 segundos.
+O audio PCM original foi preservado, sem normalizar ou mudar o tom.
+O original completo e guardado no repositorio em godot/RecursosOriginais/.
+
+O movimento voltou a funcionar quando o usuario ativou Entrada em vez do
+modo 3D da janela incorporada. Este componente nao altera a captura de teclado.
+Use somente uma instancia de Passos em Jogador para evitar som duplicado.
