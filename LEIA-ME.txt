@@ -1,0 +1,98 @@
+BUNNY HAVOC — BOSQUE VERDE: ENCONTRO COM O LAGARTO
+
+NESTA ENTREGA
+Depois do segundo checkpoint, enfrente o lagarto original. Ele prepara o bote,
+persegue pelo chão e aguenta dois golpes. O primeiro golpe o faz pular para
+trás, dando espaço para continuar o combo. Golpes e pisões podem vencê-lo;
+o finalizador causa dano maior e arremessa. A derrota vale seis cenouras.
+Há uma caixa normal adiante. O trecho agora termina em Z -110.
+O céu nativo foi mantido com Energy Multiplier 1.5, conforme seu ajuste.
+
+Continue depois do primeiro checkpoint: a trilha sobe por uma clareira larga,
+com TNT, caixa vizinha, besouro e o Rufus, até a segunda plataforma/checkpoint.
+Ao chegar perto do Rufus, aperte Enter para conversar. Enter avança as falas;
+Esc fecha. O Bunnyck fica parado durante a conversa e os controles retornam.
+A TNT acende com golpe ou pisão e explode em 1,1 segundo: afaste-se!
+A explosão alcança a caixa vizinha, sem recompensa, e pode tirar os três corações.
+O besouro patrulha com sua bola; contato tira um coração, e golpe/pisão o vence.
+Ele vira de costas, solta a bola e desaparece com poeira. Derrotá-lo vale 3 cenouras.
+O segundo checkpoint passa a ser o retorno após morrer. Voltar ao primeiro
+não apaga esse avanço. R reinicia tudo, incluindo TNT, besouro e checkpoints.
+
+Árvore de copa redonda e pinheiro com troncos irregulares, raízes expostas,
+galhos, folhagem em volumes recortados e textura de casca/folhas.
+Os modelos continuam nas mesmas cenas reutilizáveis em Cenas/Natureza/.
+As árvores existentes já usam o novo visual; não precisa substituí-las.
+Os modelos e o trecho anterior foram mantidos. O novo terreno e as posições
+da continuação vêm da Fase 1 original; câmera e limites acompanham a clareira.
+
+COMO ABRIR
+1. Extraia o ZIP inteiro para uma pasta nova, mantendo o projeto anterior.
+2. No gerenciador do Godot, clique em Importar e selecione project.godot.
+3. Aguarde a importação e pressione F5. O trecho do bosque abre diretamente.
+4. Na janela incorporada, ative ENTRADA e clique no jogo.
+   No modo 3D, o teclado controla o editor em vez do Bunnyck.
+Não é necessário criar nós, anexar scripts ou preencher sons.
+
+CRIAR OUTRAS FASES
+Abra COMO_CRIAR_FASES.md, incluído nesta pasta.
+Há cenas prontas em Cenas/: árvores, vegetação, cenoura, caixas, plataforma,
+checkpoint, espinhos e personagens. Arraste os arquivos .tscn, não os scripts.
+ExemploNovaFase.tscn demonstra o reaproveitamento fora do bosque; abra e use F6.
+Para começar sua fase, salve uma cópia desse exemplo com outro nome.
+F5 continua abrindo o trecho do Bosque Verde.
+
+CONTROLES
+WASD ou setas: andar e orientar.
+K ou Ctrl, enquanto anda: correr.
+Espaço: pular. Use corrida e salto para atravessar os vãos maiores.
+J ou Shift: atacar; três apertos encadeiam giro, soco e soco final.
+R: reiniciar o trecho inteiro, incluindo coleta, corações e checkpoint.
+F8: parar dentro do editor.
+
+O QUE JOGAR
+Siga a trilha original do Bosque Verde. Há duas caixas originais: a normal
+vale cinco cenouras e a caixa com desenho de cenoura vale quinze. Você pode
+quebrá-las com golpes ou pisão; pegar uma cenoura solta soma uma unidade.
+Os itens já coletados continuam assim quando você perde uma vida.
+
+O urso é um encontro de teste colocado neste trecho, usando o modelo e os
+sistemas que já migramos da Fase 2. Anda nas quatro patas, levanta para atacar,
+recua quando atingido e tem a morte com impacto reforçado.
+
+Depois do vão pequeno, você chega ao primeiro vão grande, com a plataforma
+móvel original. A plataforma carrega o Bunnyck quando ele está apoiado nela.
+Chegar ao outro lado no chão ativa a estátua-checkpoint original, que fica
+roxa. A próxima morte retorna a esse lado, com três corações e uma vida a menos.
+Há espinhos à direita depois da travessia: evite-os ou salte por cima.
+
+O trecho termina logo depois do SEGUNDO checkpoint, com uma mensagem de conclusão.
+Isso não conclui a campanha nem libera fases. R permite repetir o percurso.
+Sem vidas, pressione R para recomeçar. A música original do bosque está inclusa.
+
+PASTA COMPLETA DA ETAPA ATUAL
+Fase1Trecho.tscn: cena principal com o início da fase.
+Cenas/: cenas independentes com visual e comportamento reutilizáveis.
+Biblioteca/Modelos/: GLBs usados pelas cenas.
+Sistemas/Coleta/: contagem de recompensas e efeitos compartilhados.
+Fase1/: composição, terreno, limites, trilho de câmera, música e progresso.
+ExemploNovaFase.tscn: exemplo editável para iniciar outra fase.
+COMO_CRIAR_FASES.md: guia para usar as cenas prontas.
+ArenaCombate.tscn: arena anterior preservada; abra essa cena e use F6 se quiser.
+Bunnyck/, ControleInicial/, PassosBunnyck/, PulosBunnyck/: componentes existentes.
+CombateBunnyck/, Urso/: combate, saúde e urso da entrega anterior.
+RecursosOriginais/: WAV de passos original preservado.
+README.md: documentação técnica e histórico da migração.
+MANIFESTO_SHA256.json: integridade dos arquivos distribuídos.
+
+LIMITES DESTA ENTREGA
+É um recorte do início original, não a Fase 1 inteira. O caminho jogável vai
+até o primeiro checkpoint. NPCs e inimigos originais da Fase 1, restante das
+fases, cutscenes, vila, campanha, lojas e saves persistentes ainda serão portados.
+O checkpoint vale para a tentativa atual; fechar o jogo não salva progresso.
+As versões web e os pacotes anteriores continuam preservados.
+
+O projeto foi testado no Godot 4.6.3 Linux, renderer Compatibility. O usuário
+utiliza 4.7.2 Windows e fará a conferência visual e auditiva nessa versão.
+Este ZIP contém o projeto editável; exportações Windows e navegador ficam
+para uma etapa própria.
