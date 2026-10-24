@@ -1,0 +1,41 @@
+{
+	"actualGameScene": "Fase1Trecho.tscn",
+	"captures": {
+		"01_caminho_de_terra": {
+			"arena": "espera",
+			"combo": 0,
+			"defeated": 0,
+			"hearts": 3,
+			"player": "(0.0, 0.0, 8.0)",
+			"wave": 0
+		},
+		"02_alarme_da_patrulha": {
+			"arena": "cena",
+			"combo": 0,
+			"defeated": 0,
+			"hearts": 3,
+			"player": "(0.0, 5.0, -114.5)",
+			"wave": 0
+		},
+		"03_combo_na_arena": {
+			"arena": "combate",
+			"combo": 2,
+			"defeated": 1,
+			"hearts": 3,
+			"player": "(6.113544, 5.6076, -121.8623)",
+			"wave": 1
+		},
+		"04_ultima_onda": {
+			"arena": "combate",
+			"combo": 0,
+			"defeated": 6,
+			"hearts": 2,
+			"player": "(3.353906, 5.000839, -116.0049)",
+			"wave": 3
+		}
+	},
+	"engine": "4.7.2-stable (official)",
+	"gameChanged": false,
+	"internal3DHeight": 240,
+	"nativeRenderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+}
