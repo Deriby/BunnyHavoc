@@ -1,0 +1,101 @@
+{
+  "referenceArchiveSha256": "6f20510597106468e428ecbbcbdd5f8abaaef400ce57f86bf82133d7c079fba5",
+  "deliveredArchiveSha256": "a38591dd9fae86e1585e786884cfaa82250cea92a0094bb75f0a17963c97974b",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "beforeNodes": 12710,
+  "afterNodes": 4053,
+  "beforeLive": {
+    "drawCalls": 446,
+    "medianMs": 83.712,
+    "p95Ms": 99.84,
+    "primitives": 315771,
+    "staticMemoryBytes": 167639566
+  },
+  "afterLive": {
+    "drawCalls": 341,
+    "medianMs": 88.021,
+    "p95Ms": 114.751,
+    "primitives": 391947,
+    "staticMemoryBytes": 136415486
+  },
+  "samples": [
+    {
+      "z": 8.0,
+      "before": {
+        "drawCalls": 446,
+        "medianMs": 80.038,
+        "p95Ms": 91.922,
+        "primitives": 315771,
+        "staticMemoryBytes": 167639290,
+        "z": 8.0
+      },
+      "after": {
+        "drawCalls": 341,
+        "medianMs": 81.11,
+        "p95Ms": 90.951,
+        "primitives": 391947,
+        "staticMemoryBytes": 136415210,
+        "z": 8.0
+      }
+    },
+    {
+      "z": -78.0,
+      "before": {
+        "drawCalls": 287,
+        "medianMs": 67.554,
+        "p95Ms": 75.465,
+        "primitives": 303484,
+        "staticMemoryBytes": 167646766,
+        "z": -78.0
+      },
+      "after": {
+        "drawCalls": 190,
+        "medianMs": 69.07,
+        "p95Ms": 82.588,
+        "primitives": 316760,
+        "staticMemoryBytes": 136430986,
+        "z": -78.0
+      }
+    },
+    {
+      "z": -238.0,
+      "before": {
+        "drawCalls": 179,
+        "medianMs": 50.718,
+        "p95Ms": 57.091,
+        "primitives": 174007,
+        "staticMemoryBytes": 167683398,
+        "z": -238.0
+      },
+      "after": {
+        "drawCalls": 145,
+        "medianMs": 49.664,
+        "p95Ms": 80.402,
+        "primitives": 202288,
+        "staticMemoryBytes": 136448106,
+        "z": -238.0
+      }
+    },
+    {
+      "z": -376.0,
+      "before": {
+        "drawCalls": 103,
+        "medianMs": 20.306,
+        "p95Ms": 34.123,
+        "primitives": 31240,
+        "staticMemoryBytes": 167684538,
+        "z": -376.0
+      },
+      "after": {
+        "drawCalls": 80,
+        "medianMs": 17.859,
+        "p95Ms": 22.331,
+        "primitives": 60845,
+        "staticMemoryBytes": 136459206,
+        "z": -376.0
+      }
+    }
+  ],
+  "interpretation": "Fewer runtime nodes, Godot static allocations and draw calls. Software-rendered frame times remain close overall; this is an architectural/memory improvement, not proof of smooth FPS on the user PC.",
+  "limitations": "Linux llvmpipe; 240 internal lines; no PSX or fog; not a Windows/iGPU guarantee. staticMemoryBytes counts Godot allocations, not full process/driver/GPU memory."
+}
