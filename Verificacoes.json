@@ -1,0 +1,811 @@
+{
+  "fullSha256": "588124fdc3125f76ed6e6ae03a0b66fd92982aedb26b70bb69dffc198605c17f",
+  "patchSha256": "1970d5e9cfbaba2dc3da46023cd584d57a3981cc63a998f1906f2ed74c39c6aa",
+  "checks": {
+    "arena_animation": 19,
+    "arena": 26,
+    "playthrough": 7,
+    "collisions": 28,
+    "patch/arena": 26
+  },
+  "totalChecks": 106,
+  "reports": {
+    "arena_animation": {
+      "checks": [
+        {
+          "check": "Open gates fold out of the arena on actual hinges",
+          "observed": 1.0,
+          "passed": true
+        },
+        {
+          "check": "Sentinel rings an articulated bell during intro",
+          "observed": [
+            1,
+            0.112810075283051
+          ],
+          "passed": true
+        },
+        {
+          "check": "Sentinel uses raised arm and torso pose, without changing its model",
+          "observed": -2.16111063957214,
+          "passed": true
+        },
+        {
+          "check": "Alarm has two timed strikes",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Closing gate has intermediate hinge rotation and a fixed world root",
+          "observed": [
+            0.863467199769726,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "check": "Skipping mid-close completes gate state safely",
+          "observed": [
+            "combate",
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Staggered arrivals stay hidden until their launch cue",
+          "observed": -0.343333333333333,
+          "passed": true
+        },
+        {
+          "check": "Jump has a readable airborne arc before combat is enabled",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Landing absorbs impact through torso and leg pose",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "All arrivals finish in a restored solid combat pose",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Arrival cannot receive an explosion before it lands",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "R cancels arrivals, gate motion and pooled effects",
+          "observed": [
+            "espera",
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Natural intro finishes its gate closure and timed bell motion",
+          "observed": [
+            "cena",
+            0.0,
+            2
+          ],
+          "passed": true
+        },
+        {
+          "check": "Introduction hands control to the original player controller",
+          "observed": "combate",
+          "passed": true
+        },
+        {
+          "check": "Dust and leaves use a bounded shared pool",
+          "observed": [
+            48,
+            4
+          ],
+          "passed": true
+        },
+        {
+          "check": "Finished effects stop processing and drawing",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Victory releases latch and opens real gate leaves gradually",
+          "observed": 0.0465658313186437,
+          "passed": true
+        },
+        {
+          "check": "Dying during gate opening cannot revoke an earned victory",
+          "observed": "concluida",
+          "passed": true
+        },
+        {
+          "check": "Full reset restores open entrance and closed exit",
+          "observed": [
+            1.0,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "588124fdc3125f76ed6e6ae03a0b66fd92982aedb26b70bb69dffc198605c17f",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "arena": {
+      "checks": [
+        {
+          "check": "Reusable encounter configured as 3 + 3 + 4 forest humanoids",
+          "observed": "[3, 3, 4]",
+          "passed": true
+        },
+        {
+          "check": "Sentinel and alarm explain the ambush before the first wave",
+          "observed": "Patrulha de Bibibunn: ninguém segue o coelho preto! Fechem a passagem!",
+          "passed": true
+        },
+        {
+          "check": "Exit starts physically blocked and entrance is open",
+          "observed": [
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Clearing expands original corridor to over 20 metres",
+          "observed": 11.0,
+          "passed": true
+        },
+        {
+          "check": "New circular floor supports player and enemies, including filled short gap",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Circular ground has visible clockwise front faces from above",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Dirt geometry uses texture and vertex colours in prebaked world",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Walking into clearing starts cinematic and locks movement",
+          "observed": "cena",
+          "passed": true
+        },
+        {
+          "check": "Cinematic does not buffer an attack",
+          "observed": {
+            "activeHit": false,
+            "age": 0.0,
+            "grace": 0.0,
+            "heading": -3.14159250259399,
+            "hitStop": 0.0,
+            "queued": 0,
+            "reach": 0.0,
+            "reachLimit": 0.0,
+            "serial": 0,
+            "step": 0,
+            "travelled": 0.0
+          },
+          "passed": true
+        },
+        {
+          "check": "Skip releases controls and starts exactly three enemies",
+          "observed": [
+            "combate",
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Arena camera keeps player and perimeter readable",
+          "observed": "(0.006249, 21.994, -98.00621)",
+          "passed": true
+        },
+        {
+          "check": "Both gates physically close for battle",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Wave entrances finish with solid grounded enemies",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Existing spin/punch combo damages and defeats humanoid",
+          "observed": [
+            0,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death counts once even when another hit reaches the corpse",
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "check": "Second wave waits for first and never releases the exit early",
+          "observed": [
+            2,
+            3,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Final wave has four enemies, total target remains ten",
+          "observed": [
+            3,
+            4,
+            6
+          ],
+          "passed": true
+        },
+        {
+          "check": "Humanoid attacks still hurt and recoil the player",
+          "observed": [
+            2,
+            0.17
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death aborts encounter, clears enemies and restores checkpoint control",
+          "observed": [
+            "espera",
+            0,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death keeps earned carrots and resets gate state safely",
+          "observed": 36,
+          "passed": true
+        },
+        {
+          "check": "Retry skips already-seen cinematic and resets kill target",
+          "observed": [
+            "combate",
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Exactly ten defeats unlock both gates and leave no enemies",
+          "observed": [
+            10,
+            "concluida"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Retry does not farm repeated slot rewards",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Victory returns original camera controller",
+          "observed": [
+            false,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "check": "Completed arena remains open after a later death",
+          "observed": "concluida",
+          "passed": true
+        },
+        {
+          "check": "R resets waves, rewards, cinematic and barricade",
+          "observed": [
+            "espera",
+            0
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "588124fdc3125f76ed6e6ae03a0b66fd92982aedb26b70bb69dffc198605c17f",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "playthrough": {
+      "checks": [
+        {
+          "check": "Continuous keyboard run reaches the ending with all enemy AI and damage active",
+          "observed": {
+            "deaths": 1,
+            "frames": 4480,
+            "lastPosition": "(-0.072513, 8.904056, -387.114)",
+            "minimumZ": -386.943725585938
+          },
+          "passed": true
+        },
+        {
+          "check": "Arena is won with real input, AI and damage active",
+          "observed": {
+            "kills": 10,
+            "state": "concluida"
+          },
+          "passed": true
+        },
+        {
+          "check": "Camera keeps the player in view during traversal",
+          "observed": {
+            "largestFrameStep": 15.177375793457,
+            "outsideFrames": 0
+          },
+          "passed": true
+        },
+        {
+          "check": "Checkpoints activate along the continuous route",
+          "observed": [
+            -54.5,
+            -98.5,
+            -142.5,
+            -186.5,
+            -230.5,
+            -274.5,
+            -318.5
+          ],
+          "passed": true
+        },
+        {
+          "check": "Run collects carrots and defeats enemies through real controls",
+          "observed": {
+            "carrots": 153,
+            "defeated": 18
+          },
+          "passed": true
+        },
+        {
+          "check": "Route either survives or respawns at checkpoint with hearts and collected carrots",
+          "observed": [
+            {
+              "carrotsKept": true,
+              "hearts": 3,
+              "positionError": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "check": "Ending plays continuously and produces saved results",
+          "observed": {
+            "finished": true,
+            "phases": [
+              "intro",
+              "riftWarning",
+              "teleport",
+              "teleportReact",
+              "taunt",
+              "cageFly",
+              "cageDrop",
+              "trappedDialogue",
+              "windup",
+              "knockdown",
+              "aftermath",
+              "liftApproach",
+              "throwPrep",
+              "throwLaunch",
+              "airborne",
+              "catch",
+              "escape",
+              "forestReveal"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "scope": "Continuous keyboard pilot; original AI, damage, physics and camera enabled; no teleport or invulnerability during route.",
+      "status": "passed",
+      "fullArchiveSha256": "588124fdc3125f76ed6e6ae03a0b66fd92982aedb26b70bb69dffc198605c17f",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "collisions": {
+      "checks": [
+        {
+          "check": "Walking into a live crate stops at its side",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Destroyed crate no longer blocks walking",
+          "observed": -2.37736916542053,
+          "passed": true
+        },
+        {
+          "check": "Reset crate restores solid collision",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Solid crate remains breakable with the real combo",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Besouro",
+          "observed": 0.851371765136719,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Besouro",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Besouro",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Besouro stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Besouro damages it and rebounds",
+          "observed": [
+            1,
+            0,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Besouro releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Lagarto",
+          "observed": 0.850856065750122,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Lagarto",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Lagarto",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Lagarto stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Lagarto damages it and rebounds",
+          "observed": [
+            2,
+            1,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Lagarto releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Urso",
+          "observed": 1.20094275474548,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Urso",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Urso",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Urso stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Urso damages it and rebounds",
+          "observed": [
+            3,
+            2,
+            3.84031319618225,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Urso releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "NPC body blocks Bunnyck without harming him",
+          "observed": [
+            0.88234931230545,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Every authored NPC receives one reusable capsule",
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "check": "NPC routine respects a stationary Bunnyck",
+          "observed": 0.879778563976288,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "status": "passed",
+      "fullArchiveSha256": "588124fdc3125f76ed6e6ae03a0b66fd92982aedb26b70bb69dffc198605c17f",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "patch/arena": {
+      "checks": [
+        {
+          "check": "Reusable encounter configured as 3 + 3 + 4 forest humanoids",
+          "observed": "[3, 3, 4]",
+          "passed": true
+        },
+        {
+          "check": "Sentinel and alarm explain the ambush before the first wave",
+          "observed": "Patrulha de Bibibunn: ninguém segue o coelho preto! Fechem a passagem!",
+          "passed": true
+        },
+        {
+          "check": "Exit starts physically blocked and entrance is open",
+          "observed": [
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Clearing expands original corridor to over 20 metres",
+          "observed": 11.0,
+          "passed": true
+        },
+        {
+          "check": "New circular floor supports player and enemies, including filled short gap",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Circular ground has visible clockwise front faces from above",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Dirt geometry uses texture and vertex colours in prebaked world",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Walking into clearing starts cinematic and locks movement",
+          "observed": "cena",
+          "passed": true
+        },
+        {
+          "check": "Cinematic does not buffer an attack",
+          "observed": {
+            "activeHit": false,
+            "age": 0.0,
+            "grace": 0.0,
+            "heading": -3.14159250259399,
+            "hitStop": 0.0,
+            "queued": 0,
+            "reach": 0.0,
+            "reachLimit": 0.0,
+            "serial": 0,
+            "step": 0,
+            "travelled": 0.0
+          },
+          "passed": true
+        },
+        {
+          "check": "Skip releases controls and starts exactly three enemies",
+          "observed": [
+            "combate",
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Arena camera keeps player and perimeter readable",
+          "observed": "(0.006249, 21.994, -98.00621)",
+          "passed": true
+        },
+        {
+          "check": "Both gates physically close for battle",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Wave entrances finish with solid grounded enemies",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Existing spin/punch combo damages and defeats humanoid",
+          "observed": [
+            0,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death counts once even when another hit reaches the corpse",
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "check": "Second wave waits for first and never releases the exit early",
+          "observed": [
+            2,
+            3,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Final wave has four enemies, total target remains ten",
+          "observed": [
+            3,
+            4,
+            6
+          ],
+          "passed": true
+        },
+        {
+          "check": "Humanoid attacks still hurt and recoil the player",
+          "observed": [
+            2,
+            0.17
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death aborts encounter, clears enemies and restores checkpoint control",
+          "observed": [
+            "espera",
+            0,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death keeps earned carrots and resets gate state safely",
+          "observed": 36,
+          "passed": true
+        },
+        {
+          "check": "Retry skips already-seen cinematic and resets kill target",
+          "observed": [
+            "combate",
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Exactly ten defeats unlock both gates and leave no enemies",
+          "observed": [
+            10,
+            "concluida"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Retry does not farm repeated slot rewards",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Victory returns original camera controller",
+          "observed": [
+            false,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "check": "Completed arena remains open after a later death",
+          "observed": "concluida",
+          "passed": true
+        },
+        {
+          "check": "R resets waves, rewards, cinematic and barricade",
+          "observed": [
+            "espera",
+            0
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "patchSha256": "1970d5e9cfbaba2dc3da46023cd584d57a3981cc63a998f1906f2ed74c39c6aa",
+      "fullArchiveSha256": "370fced958ccb110fbadb0c0381ff998dfae38c13792c8c05dc6d6e4282a8fd2",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    }
+  },
+  "preservation": {
+    "fullSha256": "588124fdc3125f76ed6e6ae03a0b66fd92982aedb26b70bb69dffc198605c17f",
+    "patchSha256": "1970d5e9cfbaba2dc3da46023cd584d57a3981cc63a998f1906f2ed74c39c6aa",
+    "overlayMatchesFull": true,
+    "geometryTexturesAndAudioFilesUnchanged": true,
+    "changedFiles": [
+      "Cenas/Personagens/LagartoHumanoide/animacao.gd",
+      "Cenas/Personagens/LagartoHumanoide/patrulheiro.gd",
+      "Fase1/Arena/LEIA-ME.md",
+      "Fase1/Arena/posto_patrulha.gd",
+      "LEIA-ME.txt",
+      "Sistemas/Arenas/arena_ondas.gd",
+      "Sistemas/Arenas/efeitos_arena.gd",
+      "Sistemas/Arenas/entrada_patrulha.gd",
+      "Sistemas/Arenas/portao_arena.gd"
+    ]
+  },
+  "nativePreview": {
+    "actualGameplayCamera": true,
+    "engine": "4.7.2-stable (official)",
+    "fps": 15,
+    "frames": 110,
+    "source": "Fase1Trecho.tscn",
+    "state": "combate"
+  }
+}
