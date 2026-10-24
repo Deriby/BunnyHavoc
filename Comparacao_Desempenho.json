@@ -1,0 +1,76 @@
+{
+  "baselineArchiveSha256": "8641b86b066ad852885248f0f6b36e31ca742570ce4b4ab2724d0583351514b4",
+  "deliveredArchiveSha256": "d230cf039ee811f95a31014191364dcf6617ac5c1b15b5ed4778978964cd4929",
+  "defaultPlayerRadiusMeters": 55,
+  "minimumPlayerRadiusMeters": 40,
+  "originalPlayerRadiusMeters": 75,
+  "cinematicCameraRadiusMeters": 90,
+  "sectorMeters": 16,
+  "beforeLiveStanding": {
+    "drawCalls": 793,
+    "frameMedianMs": 127.134,
+    "frameP95Ms": 230.06,
+    "scope": "Standing at spawn, all normal scripts and physics active."
+  },
+  "afterLiveStanding": {
+    "drawCalls": 439,
+    "frameMedianMs": 53.168,
+    "frameP95Ms": 91.814,
+    "scope": "Standing at spawn, all normal scripts and physics active."
+  },
+  "standingFrameMedianReductionPercent": 58.17955857599068,
+  "beforeFrozenModes": [
+    {
+      "drawCalls": 794,
+      "frameMedianMs": 143.193,
+      "frameP95Ms": 282.234,
+      "mode": "Original",
+      "outputSize": "(1152, 648)",
+      "scale": 1.0
+    },
+    {
+      "drawCalls": 794,
+      "frameMedianMs": 100.434,
+      "frameP95Ms": 194.077,
+      "mode": "Leve",
+      "outputSize": "(1152, 648)",
+      "scale": 0.5
+    },
+    {
+      "drawCalls": 794,
+      "frameMedianMs": 106.742,
+      "frameP95Ms": 206.487,
+      "mode": "Minimo",
+      "outputSize": "(1152, 648)",
+      "scale": 0.333333343267441
+    }
+  ],
+  "afterFrozenModes": [
+    {
+      "drawCalls": 633,
+      "frameMedianMs": 68.373,
+      "frameP95Ms": 126.821,
+      "mode": "Original",
+      "outputSize": "(1152, 648)",
+      "scale": 1.0
+    },
+    {
+      "drawCalls": 483,
+      "frameMedianMs": 41.762,
+      "frameP95Ms": 83.216,
+      "mode": "Leve",
+      "outputSize": "(1152, 648)",
+      "scale": 0.5
+    },
+    {
+      "drawCalls": 387,
+      "frameMedianMs": 36.962,
+      "frameP95Ms": 71.122,
+      "mode": "Minimo",
+      "outputSize": "(1152, 648)",
+      "scale": 0.333333343267441
+    }
+  ],
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "limits": "Native Godot 4.7.2 Compatibility, Linux llvmpipe, fixed 60 Hz simulation. Wall frame intervals with live standing and frozen-camera samples. Not a Windows FPS guarantee."
+}
