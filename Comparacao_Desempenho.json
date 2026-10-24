@@ -1,0 +1,45 @@
+{
+  "baselineArchiveSha256": "541997f436bb16f79be2c14b2f506a78a9257d30f9ac5f08715b78f7280f07f3",
+  "deliveredArchiveSha256": "8641b86b066ad852885248f0f6b36e31ca742570ce4b4ab2724d0583351514b4",
+  "baseline": {
+    "drawCalls": 1851,
+    "frameMedianMs": 133.195,
+    "frameP95Ms": 257.789,
+    "mode": "Original",
+    "outputSize": "(1152, 648)",
+    "scale": 1.0
+  },
+  "modes": [
+    {
+      "drawCalls": 795,
+      "frameMedianMs": 111.762,
+      "frameP95Ms": 218.276,
+      "mode": "Original",
+      "outputSize": "(1152, 648)",
+      "scale": 1.0
+    },
+    {
+      "drawCalls": 795,
+      "frameMedianMs": 98.862,
+      "frameP95Ms": 210.139,
+      "mode": "Leve",
+      "outputSize": "(1152, 648)",
+      "scale": 0.5
+    },
+    {
+      "drawCalls": 795,
+      "frameMedianMs": 97.402,
+      "frameP95Ms": 195.819,
+      "mode": "Minimo",
+      "outputSize": "(1152, 648)",
+      "scale": 0.333333343267441
+    }
+  ],
+  "drawCallReductionPercent": 57.05024311183144,
+  "staticPiecesBefore": 504,
+  "staticBatchesAfter": 158,
+  "nativeCharacterImageDifferentPixelsOverThreshold": 0,
+  "limits": "Wall frame intervals with frozen world, native Linux llvmpipe. Not a Windows FPS guarantee; compilation warm-up excluded.",
+  "defaultMode": "Leve",
+  "qualityTradeoff": "Lower internal 3D resolution only. HUD and dialogues stay at full resolution. F3 restores Original."
+}
