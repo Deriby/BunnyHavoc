@@ -1,0 +1,107 @@
+{
+  "referenceArchiveSha256": "4c145d0d7e605ab08050ac317828ef028142e3144be6d0e27e8a71496143416a",
+  "deliveredArchiveSha256": "6f20510597106468e428ecbbcbdd5f8abaaef400ce57f86bf82133d7c079fba5",
+  "sameComparisonSettings": "240 internal lines; no PSX filter/material shaders, no fog, no radial render cut, dynamic sun shadows off, Compatibility, 1152x648 output.",
+  "beforeLiveStanding": {
+    "drawCalls": 3188,
+    "medianMs": 127.618,
+    "p95Ms": 139.558,
+    "primitives": 377778,
+    "staticMemoryBytes": 177025716
+  },
+  "afterLiveStanding": {
+    "drawCalls": 446,
+    "medianMs": 86.56,
+    "p95Ms": 103.846,
+    "primitives": 315771,
+    "staticMemoryBytes": 167634358
+  },
+  "samples": [
+    {
+      "z": 8.0,
+      "before": {
+        "drawCalls": 3188,
+        "medianMs": 125.733,
+        "p95Ms": 141.421,
+        "primitives": 377778,
+        "staticMemoryBytes": 177025216,
+        "z": 8.0
+      },
+      "after": {
+        "drawCalls": 446,
+        "medianMs": 87.43,
+        "p95Ms": 101.444,
+        "primitives": 315771,
+        "staticMemoryBytes": 167634082,
+        "z": 8.0
+      },
+      "drawCallReductionPercent": 86.01,
+      "medianFrameTimeReductionPercent": 30.46
+    },
+    {
+      "z": -78.0,
+      "before": {
+        "drawCalls": 2502,
+        "medianMs": 99.214,
+        "p95Ms": 113.182,
+        "primitives": 303581,
+        "staticMemoryBytes": 177026384,
+        "z": -78.0
+      },
+      "after": {
+        "drawCalls": 287,
+        "medianMs": 70.451,
+        "p95Ms": 77.919,
+        "primitives": 303484,
+        "staticMemoryBytes": 167641558,
+        "z": -78.0
+      },
+      "drawCallReductionPercent": 88.53,
+      "medianFrameTimeReductionPercent": 28.99
+    },
+    {
+      "z": -238.0,
+      "before": {
+        "drawCalls": 1273,
+        "medianMs": 60.16,
+        "p95Ms": 68.08,
+        "primitives": 155190,
+        "staticMemoryBytes": 177027236,
+        "z": -238.0
+      },
+      "after": {
+        "drawCalls": 179,
+        "medianMs": 54.137,
+        "p95Ms": 61.451,
+        "primitives": 174007,
+        "staticMemoryBytes": 167678190,
+        "z": -238.0
+      },
+      "drawCallReductionPercent": 85.94,
+      "medianFrameTimeReductionPercent": 10.01
+    },
+    {
+      "z": -376.0,
+      "before": {
+        "drawCalls": 253,
+        "medianMs": 21.235,
+        "p95Ms": 35.854,
+        "primitives": 29192,
+        "staticMemoryBytes": 177028376,
+        "z": -376.0
+      },
+      "after": {
+        "drawCalls": 103,
+        "medianMs": 19.735,
+        "p95Ms": 29.044,
+        "primitives": 31240,
+        "staticMemoryBytes": 167679330,
+        "z": -376.0
+      },
+      "drawCallReductionPercent": 59.29,
+      "medianFrameTimeReductionPercent": 7.06
+    }
+  ],
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "limitations": "Native Linux llvmpipe software renderer. Wall frame measurements; not a Windows/iGPU FPS guarantee. staticMemoryBytes counts Godot allocations, not total process/driver/GPU memory."
+}
