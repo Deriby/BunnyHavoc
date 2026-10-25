@@ -1,0 +1,1736 @@
+{
+  "fullSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+  "patchSha256": "0d44220ffd92f9a5dd48c18bc3443811e61f3502ef595e1962222f40c3cdc244",
+  "totalChecks": 137,
+  "checks": {
+    "render_leve": 12,
+    "render_leve/native": 12,
+    "arena": 26,
+    "arena_animation": 19,
+    "collisions": 28,
+    "playthrough": 7,
+    "enemies": 21,
+    "patch/render_leve": 12
+  },
+  "reports": {
+    "render_leve": {
+      "checks": [
+        {
+          "check": "Far vegetation derives from original authored plants",
+          "observed": 1756,
+          "passed": true
+        },
+        {
+          "check": "Leve enables prepared distant meshes without loading authored forest",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z 8.0",
+          "observed": [
+            12,
+            75
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -78.0",
+          "observed": [
+            16,
+            72
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -119.0",
+          "observed": [
+            24,
+            59
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -238.0",
+          "observed": [
+            24,
+            59
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -376.0",
+          "observed": [
+            24,
+            62
+          ],
+          "passed": true
+        },
+        {
+          "check": "Nítido restores original detail threshold and native far geometry",
+          "observed": 2.0,
+          "passed": true
+        },
+        {
+          "check": "Mínimo reduces geometric detail as well as resolution",
+          "observed": 64.0,
+          "passed": true
+        },
+        {
+          "check": "Leve preserves detailed nearby meshes",
+          "observed": 24.0,
+          "passed": true
+        },
+        {
+          "check": "Quality selection never changes collisions or interaction masks",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "No fog or short far-plane cut is introduced",
+          "observed": 4000.0,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "render_leve/native": {
+      "checks": [
+        {
+          "check": "Far vegetation derives from original authored plants",
+          "observed": 1756,
+          "passed": true
+        },
+        {
+          "check": "Leve enables prepared distant meshes without loading authored forest",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z 8.0",
+          "observed": [
+            12,
+            75
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -78.0",
+          "observed": [
+            16,
+            72
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -119.0",
+          "observed": [
+            24,
+            59
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -238.0",
+          "observed": [
+            24,
+            59
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -376.0",
+          "observed": [
+            24,
+            62
+          ],
+          "passed": true
+        },
+        {
+          "check": "Nítido restores original detail threshold and native far geometry",
+          "observed": 2.0,
+          "passed": true
+        },
+        {
+          "check": "Mínimo reduces geometric detail as well as resolution",
+          "observed": 64.0,
+          "passed": true
+        },
+        {
+          "check": "Leve preserves detailed nearby meshes",
+          "observed": 24.0,
+          "passed": true
+        },
+        {
+          "check": "Quality selection never changes collisions or interaction masks",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "No fog or short far-plane cut is introduced",
+          "observed": 4000.0,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": true
+    },
+    "arena": {
+      "checks": [
+        {
+          "check": "Reusable encounter configured as 3 + 3 + 4 forest humanoids",
+          "observed": "[3, 3, 4]",
+          "passed": true
+        },
+        {
+          "check": "Sentinel and alarm explain the ambush before the first wave",
+          "observed": "Patrulha de Bibibunn: ninguém segue o coelho preto! Fechem a passagem!",
+          "passed": true
+        },
+        {
+          "check": "Exit starts physically blocked and entrance is open",
+          "observed": [
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Clearing expands original corridor to over 20 metres",
+          "observed": 11.0,
+          "passed": true
+        },
+        {
+          "check": "New circular floor supports player and enemies, including filled short gap",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Circular ground has visible clockwise front faces from above",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Dirt geometry uses texture and vertex colours in prebaked world",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Walking into clearing starts cinematic and locks movement",
+          "observed": "cena",
+          "passed": true
+        },
+        {
+          "check": "Cinematic does not buffer an attack",
+          "observed": {
+            "activeHit": false,
+            "age": 0.0,
+            "grace": 0.0,
+            "heading": -3.14159250259399,
+            "hitStop": 0.0,
+            "queued": 0,
+            "reach": 0.0,
+            "reachLimit": 0.0,
+            "serial": 0,
+            "step": 0,
+            "travelled": 0.0
+          },
+          "passed": true
+        },
+        {
+          "check": "Skip releases controls and starts exactly three enemies",
+          "observed": [
+            "combate",
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Arena camera keeps player and perimeter readable",
+          "observed": "(0.006249, 21.994, -98.00621)",
+          "passed": true
+        },
+        {
+          "check": "Both gates physically close for battle",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Wave entrances finish with solid grounded enemies",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Existing spin/punch combo damages and defeats humanoid",
+          "observed": [
+            0,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death counts once even when another hit reaches the corpse",
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "check": "Second wave waits for first and never releases the exit early",
+          "observed": [
+            2,
+            3,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Final wave has four enemies, total target remains ten",
+          "observed": [
+            3,
+            4,
+            6
+          ],
+          "passed": true
+        },
+        {
+          "check": "Humanoid attacks still hurt and recoil the player",
+          "observed": [
+            2,
+            0.17
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death aborts encounter, clears enemies and restores checkpoint control",
+          "observed": [
+            "espera",
+            0,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death keeps earned carrots and resets gate state safely",
+          "observed": 36,
+          "passed": true
+        },
+        {
+          "check": "Retry skips already-seen cinematic and resets kill target",
+          "observed": [
+            "combate",
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Exactly ten defeats unlock both gates and leave no enemies",
+          "observed": [
+            10,
+            "concluida"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Retry does not farm repeated slot rewards",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Victory returns original camera controller",
+          "observed": [
+            false,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "check": "Completed arena remains open after a later death",
+          "observed": "concluida",
+          "passed": true
+        },
+        {
+          "check": "R resets waves, rewards, cinematic and barricade",
+          "observed": [
+            "espera",
+            0
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "arena_animation": {
+      "checks": [
+        {
+          "check": "Open gates fold out of the arena on actual hinges",
+          "observed": 1.0,
+          "passed": true
+        },
+        {
+          "check": "Sentinel rings an articulated bell during intro",
+          "observed": [
+            1,
+            0.112810075283051
+          ],
+          "passed": true
+        },
+        {
+          "check": "Sentinel uses raised arm and torso pose, without changing its model",
+          "observed": -2.16111063957214,
+          "passed": true
+        },
+        {
+          "check": "Alarm has two timed strikes",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Closing gate has intermediate hinge rotation and a fixed world root",
+          "observed": [
+            0.863467199769726,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "check": "Skipping mid-close completes gate state safely",
+          "observed": [
+            "combate",
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Staggered arrivals stay hidden until their launch cue",
+          "observed": -0.343333333333333,
+          "passed": true
+        },
+        {
+          "check": "Jump has a readable airborne arc before combat is enabled",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Landing absorbs impact through torso and leg pose",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "All arrivals finish in a restored solid combat pose",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Arrival cannot receive an explosion before it lands",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "R cancels arrivals, gate motion and pooled effects",
+          "observed": [
+            "espera",
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Natural intro finishes its gate closure and timed bell motion",
+          "observed": [
+            "cena",
+            0.0,
+            2
+          ],
+          "passed": true
+        },
+        {
+          "check": "Introduction hands control to the original player controller",
+          "observed": "combate",
+          "passed": true
+        },
+        {
+          "check": "Dust and leaves use a bounded shared pool",
+          "observed": [
+            48,
+            4
+          ],
+          "passed": true
+        },
+        {
+          "check": "Finished effects stop processing and drawing",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Victory releases latch and opens real gate leaves gradually",
+          "observed": 0.0465658313186437,
+          "passed": true
+        },
+        {
+          "check": "Dying during gate opening cannot revoke an earned victory",
+          "observed": "concluida",
+          "passed": true
+        },
+        {
+          "check": "Full reset restores open entrance and closed exit",
+          "observed": [
+            1.0,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "collisions": {
+      "checks": [
+        {
+          "check": "Walking into a live crate stops at its side",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Destroyed crate no longer blocks walking",
+          "observed": -2.37736916542053,
+          "passed": true
+        },
+        {
+          "check": "Reset crate restores solid collision",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Solid crate remains breakable with the real combo",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Besouro",
+          "observed": 0.851371765136719,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Besouro",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Besouro",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Besouro stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Besouro damages it and rebounds",
+          "observed": [
+            1,
+            0,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Besouro releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Lagarto",
+          "observed": 0.850856065750122,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Lagarto",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Lagarto",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Lagarto stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Lagarto damages it and rebounds",
+          "observed": [
+            2,
+            1,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Lagarto releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Urso",
+          "observed": 1.20094275474548,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Urso",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Urso",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Urso stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Urso damages it and rebounds",
+          "observed": [
+            3,
+            2,
+            3.84031319618225,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Urso releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "NPC body blocks Bunnyck without harming him",
+          "observed": [
+            0.88234931230545,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Every authored NPC receives one reusable capsule",
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "check": "NPC routine respects a stationary Bunnyck",
+          "observed": 0.879778563976288,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "status": "passed",
+      "fullArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "playthrough": {
+      "checks": [
+        {
+          "check": "Continuous keyboard run reaches the ending with all enemy AI and damage active",
+          "observed": {
+            "deaths": 1,
+            "frames": 4473,
+            "lastPosition": "(-0.073164, 8.905101, -387.128)",
+            "minimumZ": -386.957733154297
+          },
+          "passed": true
+        },
+        {
+          "check": "Arena is won with real input, AI and damage active",
+          "observed": {
+            "kills": 10,
+            "state": "concluida"
+          },
+          "passed": true
+        },
+        {
+          "check": "Camera keeps the player in view during traversal",
+          "observed": {
+            "largestFrameStep": 16.0988578796387,
+            "outsideFrames": 0
+          },
+          "passed": true
+        },
+        {
+          "check": "Checkpoints activate along the continuous route",
+          "observed": [
+            -54.5,
+            -98.5,
+            -142.5,
+            -186.5,
+            -230.5,
+            -274.5,
+            -318.5
+          ],
+          "passed": true
+        },
+        {
+          "check": "Run collects carrots and defeats enemies through real controls",
+          "observed": {
+            "carrots": 147,
+            "defeated": 15
+          },
+          "passed": true
+        },
+        {
+          "check": "Route either survives or respawns at checkpoint with hearts and collected carrots",
+          "observed": [
+            {
+              "carrotsKept": true,
+              "hearts": 3,
+              "positionError": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "check": "Ending plays continuously and produces saved results",
+          "observed": {
+            "finished": true,
+            "phases": [
+              "intro",
+              "riftWarning",
+              "teleport",
+              "teleportReact",
+              "taunt",
+              "cageFly",
+              "cageDrop",
+              "trappedDialogue",
+              "windup",
+              "knockdown",
+              "aftermath",
+              "liftApproach",
+              "throwPrep",
+              "throwLaunch",
+              "airborne",
+              "catch",
+              "escape",
+              "forestReveal"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "scope": "Continuous keyboard pilot; original AI, damage, physics and camera enabled; no teleport or invulnerability during route.",
+      "status": "passed",
+      "fullArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "enemies": {
+      "checks": [
+        {
+          "check": "Beetle spots nearby player before attacking",
+          "observed": "notice",
+          "passed": true
+        },
+        {
+          "check": "Beetle announces its windup",
+          "observed": "windup",
+          "passed": true
+        },
+        {
+          "check": "Beetle commits to a direction and cannot home through a dodge",
+          "observed": [
+            "charge",
+            "(-0.013332, 0.0, 0.999911)"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Missed beetle charge leaves a safe counterattack opening",
+          "observed": "recover",
+          "passed": true
+        },
+        {
+          "check": "Touching recovering beetle does not cost a heart",
+          "observed": [
+            3,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Beetle returns to its original patrol after the opening",
+          "observed": "patrol",
+          "passed": true
+        },
+        {
+          "check": "Charging beetle stops at a real ledge",
+          "observed": [
+            85.9333038330078,
+            "recover"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Beetle restart clears alert and cooldown",
+          "observed": "patrol",
+          "passed": true
+        },
+        {
+          "check": "Lizard stalks and backs away before the crouch",
+          "observed": [
+            "stalk",
+            -0.162500023841858
+          ],
+          "passed": true
+        },
+        {
+          "check": "Lizard announces a stationary windup after stalking",
+          "observed": "windup",
+          "passed": true
+        },
+        {
+          "check": "Lizard lunge keeps the announced line after sidestep",
+          "observed": [
+            "lunge",
+            "(0.0, 0.0, 0.405)"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Lizard recovery is stationary and cannot hurt by contact",
+          "observed": [
+            "recover",
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "A stomp still interrupts preparation with the original damage hop",
+          "observed": [
+            1,
+            "hurt"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Bear stops to sniff when it notices the player",
+          "observed": "sniff",
+          "passed": true
+        },
+        {
+          "check": "Bear sniff remains grounded on four paws",
+          "observed": [
+            "(80.0, 0.0, 0.0)",
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Bear pursues after its single attention pause",
+          "observed": "walk",
+          "passed": true
+        },
+        {
+          "check": "Bear stands and warns before striking",
+          "observed": [
+            "wind",
+            1.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Bear claw attack cannot rotate to follow a late dodge",
+          "observed": [
+            "swipe",
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Bear returns to a harmless recovery after the swipe",
+          "observed": "recover",
+          "passed": true
+        },
+        {
+          "check": "Actual bear recovery contact does not cost a heart",
+          "observed": [
+            3,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Restart restores bear combat without stale alert or direction",
+          "observed": [
+            3,
+            "walk"
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "status": "passed",
+      "fullArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "patch/render_leve": {
+      "checks": [
+        {
+          "check": "Far vegetation derives from original authored plants",
+          "observed": 1756,
+          "passed": true
+        },
+        {
+          "check": "Leve enables prepared distant meshes without loading authored forest",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z 8.0",
+          "observed": [
+            12,
+            75
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -78.0",
+          "observed": [
+            16,
+            72
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -119.0",
+          "observed": [
+            24,
+            59
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -238.0",
+          "observed": [
+            24,
+            59
+          ],
+          "passed": true
+        },
+        {
+          "check": "Near/far vegetation coverage at z -376.0",
+          "observed": [
+            24,
+            62
+          ],
+          "passed": true
+        },
+        {
+          "check": "Nítido restores original detail threshold and native far geometry",
+          "observed": 2.0,
+          "passed": true
+        },
+        {
+          "check": "Mínimo reduces geometric detail as well as resolution",
+          "observed": 64.0,
+          "passed": true
+        },
+        {
+          "check": "Leve preserves detailed nearby meshes",
+          "observed": 24.0,
+          "passed": true
+        },
+        {
+          "check": "Quality selection never changes collisions or interaction masks",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "No fog or short far-plane cut is introduced",
+          "observed": 4000.0,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "patchSha256": "0d44220ffd92f9a5dd48c18bc3443811e61f3502ef595e1962222f40c3cdc244",
+      "fullArchiveSha256": "588124fdc3125f76ed6e6ae03a0b66fd92982aedb26b70bb69dffc198605c17f",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    }
+  },
+  "preservation": {
+    "fullSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+    "patchSha256": "0d44220ffd92f9a5dd48c18bc3443811e61f3502ef595e1962222f40c3cdc244",
+    "overlayMatchesFull": true,
+    "originalModelsTerrainTexturesAudioAndDataUnchanged": 721,
+    "protectedFiles": [
+      "Biblioteca/Modelos/Arbusto.glb",
+      "Biblioteca/Modelos/ArvoreCopaRedonda.glb",
+      "Biblioteca/Modelos/Bento.glb",
+      "Biblioteca/Modelos/Besouro.glb",
+      "Biblioteca/Modelos/Brisa.glb",
+      "Biblioteca/Modelos/CaixaCenouras.glb",
+      "Biblioteca/Modelos/CaixaNormal.glb",
+      "Biblioteca/Modelos/CaixaTNT.glb",
+      "Biblioteca/Modelos/Caixa_armored.glb",
+      "Biblioteca/Modelos/Caixa_nitro.glb",
+      "Biblioteca/Modelos/Caixa_spring.glb",
+      "Biblioteca/Modelos/Cenoura.glb",
+      "Biblioteca/Modelos/Checkpoint.glb",
+      "Biblioteca/Modelos/Cogumelo_9d74e4.glb",
+      "Biblioteca/Modelos/Cogumelo_e95364.glb",
+      "Biblioteca/Modelos/Cogumelo_ffc052.glb",
+      "Biblioteca/Modelos/Espinhos.glb",
+      "Biblioteca/Modelos/Fiona.glb",
+      "Biblioteca/Modelos/Flor_6ab0ff.glb",
+      "Biblioteca/Modelos/Flor_ff5ac8.glb",
+      "Biblioteca/Modelos/Flor_ffe14a.glb",
+      "Biblioteca/Modelos/Flor_ffffff.glb",
+      "Biblioteca/Modelos/Lagarto.glb",
+      "Biblioteca/Modelos/Luna.glb",
+      "Biblioteca/Modelos/Max.glb",
+      "Biblioteca/Modelos/Mel.glb",
+      "Biblioteca/Modelos/Miro.glb",
+      "Biblioteca/Modelos/Nina.glb",
+      "Biblioteca/Modelos/Obstaculo_spike_1.glb",
+      "Biblioteca/Modelos/Otto.glb",
+      "Biblioteca/Modelos/Passaro.glb",
+      "Biblioteca/Modelos/Pinheiro.glb",
+      "Biblioteca/Modelos/Pip.glb",
+      "Biblioteca/Modelos/PlataformaMovel.glb",
+      "Biblioteca/Modelos/Puca.glb",
+      "Biblioteca/Modelos/Rocha.glb",
+      "Biblioteca/Modelos/Rufus.glb",
+      "Biblioteca/Modelos/Segredo.glb",
+      "Biblioteca/Modelos/Seixo.glb",
+      "Biblioteca/Modelos/Tico.glb",
+      "Biblioteca/Modelos/TufoGrama.glb",
+      "Biblioteca/Modelos/Vixxo.glb",
+      "Bunnyck/bunnyck.glb",
+      "Cenas/Caixas/Visual/caixas_atlas.png",
+      "CombateBunnyck/audio/bunnyck_dano.wav",
+      "CombateBunnyck/audio/bunnyck_morte.wav",
+      "CombateBunnyck/audio/bunnyck_pouso.wav",
+      "CombateBunnyck/audio/urso_dano.wav",
+      "CombateBunnyck/audio/urso_garra.wav",
+      "CombateBunnyck/audio/urso_impacto.wav",
+      "CombateBunnyck/audio/urso_preparo.wav",
+      "CombateBunnyck/modelos/urso.glb",
+      "ControleInicial/audio/giro.wav",
+      "ControleInicial/audio/impacto.wav",
+      "ControleInicial/audio/impacto_final.wav",
+      "ControleInicial/audio/soco.wav",
+      "ControleInicial/audio/soco_final.wav",
+      "Fase1/Completa/Cinema/cinema.ogg",
+      "Fase1/Completa/Cinema/fala.json",
+      "Fase1/Completa/Cinema/rig.json",
+      "Fase1/Completa/Final.glb",
+      "Fase1/Completa/final.json.gz",
+      "Fase1/Completa/final.wav",
+      "Fase1/Completa/layout.json",
+      "Fase1/Completa/natureza-layout.json",
+      "Fase1/Completa/terreno.glb",
+      "Fase1/Estatico/Malhas/bloco_-1_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-10_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-11_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-12_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-13_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-14_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-1_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-2_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-3_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-4_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-5_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-6_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-7_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-8_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_-9_1.res",
+      "Fase1/Estatico/Malhas/bloco_-1_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_-1_0_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-10_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-11_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-12_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-13_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-14_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-1_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-2_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-3_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-4_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-5_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-6_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-7_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-8_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_-9_1.res",
+      "Fase1/Estatico/Malhas/bloco_-2_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_-2_0_1.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_-3_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_-4_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_-5_1_0.res",
+      "Fase1/Estatico/Malhas/bloco_-6_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_-6_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_-6_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_-6_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-10_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-11_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-12_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-13_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-14_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-1_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-2_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-3_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-4_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-5_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-6_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-7_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-8_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_-9_1.res",
+      "Fase1/Estatico/Malhas/bloco_0_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_0_0_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-10_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-11_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-12_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-13_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-14_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-1_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-2_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-3_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-4_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-5_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-6_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-7_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-8_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_-9_1.res",
+      "Fase1/Estatico/Malhas/bloco_1_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_1_0_1.res",
+      "Fase1/Estatico/Malhas/bloco_2_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_2_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-12_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_3_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-10_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-11_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-13_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-14_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-1_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-2_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-3_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-4_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-5_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-6_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-7_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-8_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_-9_0.res",
+      "Fase1/Estatico/Malhas/bloco_4_0_0.res",
+      "Fase1/Estatico/Malhas/bloco_5_-1_0.res",
+      "Fase1/Estatico/Malhas/longe_-1_0.res",
+      "Fase1/Estatico/Malhas/longe_-1_1.res",
+      "Fase1/Estatico/Malhas/longe_-2_0.res",
+      "Fase1/Estatico/Malhas/longe_-2_1.res",
+      "Fase1/Estatico/Malhas/longe_-3_0.res",
+      "Fase1/Estatico/Malhas/longe_-3_1.res",
+      "Fase1/Estatico/Malhas/longe_-4_0.res",
+      "Fase1/Estatico/Malhas/longe_-4_1.res",
+      "Fase1/Estatico/Malhas/longe_-5_0.res",
+      "Fase1/Estatico/Malhas/longe_-5_1.res",
+      "Fase1/Estatico/Malhas/longe_-6_0.res",
+      "Fase1/Estatico/Malhas/longe_-6_1.res",
+      "Fase1/Estatico/Malhas/longe_-7_0.res",
+      "Fase1/Estatico/Malhas/longe_-7_1.res",
+      "Fase1/Estatico/Malhas/longe_0_0.res",
+      "Fase1/Estatico/Malhas/longe_0_1.res",
+      "Fase1/Estatico/Materiais/material_0.res",
+      "Fase1/Estatico/Materiais/material_1.res",
+      "Fase1/Estatico/Materiais/material_2.res",
+      "Fase1/Estatico/Materiais/material_3.res",
+      "Fase1/Estatico/Texturas/atlas_3d05dceee61dbf8fa7636315d5b07691cda9d2df3c04c86e7de29ea452ddbec9.res",
+      "Fase1/Estatico/Texturas/atlas_5b002e2256ad6db0055ab917cf3aa7be55c355ab4bdb552ca011299a0c828b51.res",
+      "Fase1/Trecho2/layout.json",
+      "Fase1/Trecho2/natureza-layout.json",
+      "Fase1/Trecho2/terreno.glb",
+      "Fase1/Trecho3/layout.json",
+      "Fase1/Trecho4/layout.json",
+      "Fase1/Trecho4/natureza-layout.json",
+      "Fase1/Trecho4/terreno.glb",
+      "Fase1/audio/phase-1-theme.mp3",
+      "Fase1/ceu.png",
+      "Fase1/layout.json",
+      "Fase1/natureza-layout.json",
+      "Fase1/terreno.glb",
+      "PassosBunnyck/audio/passo_01.wav",
+      "PassosBunnyck/audio/passo_02.wav",
+      "PassosBunnyck/audio/passo_03.wav",
+      "PassosBunnyck/audio/passo_04.wav",
+      "PulosBunnyck/audio/Jump1.mp3",
+      "PulosBunnyck/audio/Jump2.mp3",
+      "PulosBunnyck/audio/Jump3.mp3",
+      "Recursos/Otimizados/01263af65bd9ae81cfe53c2b805beda2a617e13d49d810ba766eb470296b92d1.res",
+      "Recursos/Otimizados/028c653d9733617385e9f93d2a65a9c846428176682230cae27d7e8bcefe7d04.res",
+      "Recursos/Otimizados/033871b4092606609380296b0afe817cd4ed962fbe42723bdbcccc2c270c2de4.res",
+      "Recursos/Otimizados/04238eff8d1b03db6ed140f5a5ab741146be5445811597d3f0752f8b7680cd8a.res",
+      "Recursos/Otimizados/04deb402c7e8c339717eeb0b6c6d61cd9b6ce4f1b49501c13ace68f15647f1b7.res",
+      "Recursos/Otimizados/04ef3c537a0e312b822478570a70eb7a6692fe880b02c65a82a962dc90faa802.res",
+      "Recursos/Otimizados/0728ca67ed9038fc12dfacd9b0e77dc0f14d900759274597b3ce55c3981ece84.res",
+      "Recursos/Otimizados/085cc67f848f840483bdcb602689fdfa38e927829623a34b76803a5cabe943c9.res",
+      "Recursos/Otimizados/08662b1d2db2f2bc49fb36abc05f27a371431a48e4978359eac3670d8361ccfd.res",
+      "Recursos/Otimizados/08be0362a8f629f79da6c57f893f0b3e76d57618c2888428b2af54ace6324d1c.res",
+      "Recursos/Otimizados/08d7f402ef502956a6a74790397057c3c20aa8bd04f79fc9f619b2c6ad37ed91.res",
+      "Recursos/Otimizados/08da6860ffde036196ed586838856117aaecf3e20d9740c9c4841f729cf10721.res",
+      "Recursos/Otimizados/0a84fa29cc2914b839014f8a2fb26b5927773d28ddcefb8aada2b5c092beeb89.res",
+      "Recursos/Otimizados/0b83e0757a6bc0fbf92eeb6f5042f9883027796980445c7990f25dc84dbaba6c.res",
+      "Recursos/Otimizados/0b8f7f31c329cc0ca077218aa89ff4eb01d9371c905fd157994464851c29dcfa.res",
+      "Recursos/Otimizados/0ccdfe12e2ec12566cd04685706e4c54d001761e6f5e93501e6153238f32af47.res",
+      "Recursos/Otimizados/0d180c88d0d321fd23ae3494b8109bcef53927e9fba17571ae2cda8cd3943e9f.res",
+      "Recursos/Otimizados/0e0aa947bf96a60bcdf392edd24c84bf6fdbe25f4cad903871ab7712eda4a686.res",
+      "Recursos/Otimizados/0eb9f16e4f38009f9e605506d3febe1a8cab6813423de75ede7c6bfd81027a37.res",
+      "Recursos/Otimizados/0ecc9555715109daf5cac265104d80b1695dfc0b240b32d045ec5899bd86b64a.res",
+      "Recursos/Otimizados/0fc93c6ea4744753a4c1c9aa59de6eeca86d540fd5715474713f5e7b7ace2c19.res",
+      "Recursos/Otimizados/10e35a57cbfa78db066fbfe6dc8325023d985814ed8c7ec656cb27eb2e972ba7.res",
+      "Recursos/Otimizados/11f2cfeecf1108eacc90729142f2302d4f8f7a1f32df8aac58864eaeea0f2dec.res",
+      "Recursos/Otimizados/12369d45e197a2de2fb44ca77b42671efef6439bd1998d1016adc1de987e3a00.res",
+      "Recursos/Otimizados/12736a3c4fb03d49fbd6ae1b776756a0a8f44266f045454d70738bdffbcfc766.res",
+      "Recursos/Otimizados/1315075c978be7de99114fd7b4cf00e431841be4a855749d5db3b94ab29e2e28.res",
+      "Recursos/Otimizados/14ef3f5e37f4aaf690333e04fe1a2ee16b87294336ae771144fbbad3bbc02e40.res",
+      "Recursos/Otimizados/16f62e624139dec644db6cb9ffc73e6adf016f14c8aa1dd531135206813dda70.res",
+      "Recursos/Otimizados/194607670a5cb2c5882f1e2c33ba30d762a79b23b621b772f203587465669181.res",
+      "Recursos/Otimizados/19861a5efcaa0056dc80c5121e59e47ac5907dcbf1f3c44ddd69c24ed02e024d.res",
+      "Recursos/Otimizados/199ce8c0f3a928ceae2ce7f77dc7834047d450fb1e12a7a6261400e007b983ce.res",
+      "Recursos/Otimizados/19ecd175817f1443afeebadaba71e139d1795990fdffed12258a44277cc0961e.res",
+      "Recursos/Otimizados/1ae2667ca128658b039812b593d0890eca5aad354d07ebcd531d33476bcfb5a4.res",
+      "Recursos/Otimizados/1c2c1a66faa912ac4a34ff94ee889894918b40fedd787db9e2cd26907620813d.res",
+      "Recursos/Otimizados/1c76e27c410404773f0ba6fc6850e1efbd8f068f1fb07a3c71062e81c193162e.res",
+      "Recursos/Otimizados/1d0c9b83b31c7a8058f1359a6ca920cebd9fe5d849eb259e6b8fc1b3bae37914.res",
+      "Recursos/Otimizados/1e008c6999723ab9e9c6c6263e2b10e3c1f87e53d8954372e4d9ce47660de757.res",
+      "Recursos/Otimizados/1fca7c28c550fc4fc19d1db4cd5a6f2e3539abcebd970b274df5c0c2f7b5b8f5.res",
+      "Recursos/Otimizados/2018e6324ef8401209df42651d36f33c7d6a84a93c76260a358337206a52b815.res",
+      "Recursos/Otimizados/202475f132931ad527f8d84732163ac6a5482020baed7f886375fb190fdf6c80.res",
+      "Recursos/Otimizados/203b5b67147efde60a56780025ea3ef4526b3647a8e3ce339e8eb1b1dada10d7.res",
+      "Recursos/Otimizados/20cde59d6d15bc67ae239c90506e74bfb7a9f324dc4540a8d74a7c65887dee41.res",
+      "Recursos/Otimizados/20d673fa9805523251d23f7763839983f5ce455f91b4080fd4123f38401b60f6.res",
+      "Recursos/Otimizados/20dfc7a9917db51e78098c4e73bda03a142fe1e844b9c13ea3a8cdfc60d4483f.res",
+      "Recursos/Otimizados/20e0c3c913bd1dd9ff7ad07be286eaf196593c43a5ab95f39f0741bfbb7a82cf.res",
+      "Recursos/Otimizados/2138bdde862918f595476aa38bdd7ff59a8c34fea7cd068bd4890e1dd3d15caf.res",
+      "Recursos/Otimizados/23674ba8da0b664b968437994e8369ef180ab95cc421e7e99bc40fd4055baeee.res",
+      "Recursos/Otimizados/23b6618b569e940c2287c1c04e0640b6ad6a77c0a707acf725cad424d3803b9c.res",
+      "Recursos/Otimizados/243ca40fda5baa14cab2417a865504bdbda2b28f25cfb0588498135e4a8504f1.res",
+      "Recursos/Otimizados/248d9f3ee5732976f01882190a6aa7fbbd0fdc1f92e64df453be6f64dd31328b.res",
+      "Recursos/Otimizados/25040a01a62cfd6a1d3f21e62e0ca0e4974bcacd9c37c75ca38d141923f9198c.res",
+      "Recursos/Otimizados/25390aecd4a367eb20e0df121f9aeb4b42bfa2f8f3a578143a0be94a9953b131.res",
+      "Recursos/Otimizados/25a2813908dade07b169f381eedc10b9e8cd09bfec9d48dec48890ac7dd578ff.res",
+      "Recursos/Otimizados/261d4ee69e1ba378baa1b8f3b1b2a7f6821d9498e7e68a2498791e4e7725504a.res",
+      "Recursos/Otimizados/264c836f97a5d409a835aecea117fe21f253274c517074055f209dd710c57cfb.res",
+      "Recursos/Otimizados/264e10617cf7543200a97e0b6370c16c9bd3edcf0dfc8948461bd4357b9537b6.res",
+      "Recursos/Otimizados/266cef8763702eabbe44e149cfab6d8b8b13a898e68ad2097a51340e9c2d254f.res",
+      "Recursos/Otimizados/26708bc91973bf5693e8a8c4e967e0912b585f2418b6d5da80c628888f0f3ee4.res",
+      "Recursos/Otimizados/2700f77ee48b1007ce89d2812cedb4ee098dc68758c62dbaf0f96b236d5aa8d6.res",
+      "Recursos/Otimizados/271c2aa780b6531e9cd3d0c6637d4b392f52426fd30f419c131d632d96da2c03.res",
+      "Recursos/Otimizados/2762fa7599fea53b0349b14b2efb73e1616c51dd31bc5c4c235ea33e8a0ba3d9.res",
+      "Recursos/Otimizados/28899c8c3b6a2bd7b8210937084eef04ca0e85fc9507759e1d17a727a0dbd9db.res",
+      "Recursos/Otimizados/28f34c2d97f3ab7e0ac6eea097375f3e708493f3697472a3de116075352dc700.res",
+      "Recursos/Otimizados/29dc95e8c47a02dfa829a9ff6786c14b840a27d57780f06c5a6742a2b8ff35c6.res",
+      "Recursos/Otimizados/29f179402b7e0a413a6ae56ea218bed5adc1f6d424b0f33348dd66f3c92b3796.res",
+      "Recursos/Otimizados/2a24547910c5711ce62b41d5bf2b140e07595ee1a31a1455adfed1c72c38b132.res",
+      "Recursos/Otimizados/2a345d935a63a0f2d3e030c1eae345c78e81f0e1f645cca2f3586a977fc15684.res",
+      "Recursos/Otimizados/2a6718b9aaf6f20f40dd1e508957bc5d91a11e8d8cce41944ba750681e84af3b.res",
+      "Recursos/Otimizados/2b30e4b3f7d8db2fd5ac05aae24b9524ebed2289678c5ff23a40a437f1cf64b3.res",
+      "Recursos/Otimizados/2b45ed73f15bbd7f54b4e1e2893ffb515e4225dc3dfd1423283b4a6f1bc95275.res",
+      "Recursos/Otimizados/2bfab05ae83469e1023088470842e0cc5195e29351867932310a21bea6c991fb.res",
+      "Recursos/Otimizados/2fb6c9aa72fc55e14ec2f69f0145b4cd572e9349df1a72ed4fbaffffd4848f57.res",
+      "Recursos/Otimizados/30ae1d11bacfe129b6aba934a4f252b7b0c28bbbe15bccf1fd61b33edae3217d.res",
+      "Recursos/Otimizados/3141f3f73d10e3985b5d33134a68699012fc61e0b22477136a31f07c9c1b958c.res",
+      "Recursos/Otimizados/31bf6942c7b71459787b2b540ca67d546e7101a3ac81c9a74511af19e8f6257b.res",
+      "Recursos/Otimizados/31da658ed1e3cbe72ed2b8ec7de8d874ee36db328c1caa937516dccc45676d94.res",
+      "Recursos/Otimizados/3239845c30f2aa8de4c751027ae59abf697d2f0a2971d8123b11133844082a3f.res",
+      "Recursos/Otimizados/32c38e082bf4a54368525c6b8fae94baf7c64a3fbedf8378cba1041e4f3d9d69.res",
+      "Recursos/Otimizados/330e76e557e93f8dc950225de008db05fd7a369e0f3807861bac2dc60163b986.res",
+      "Recursos/Otimizados/3341a8a60e6efb80a771617e6d983d4298be5624e0a57a5ca97c523a4e65931a.res",
+      "Recursos/Otimizados/33bda9d209537fc21e167904a56c6b1a18f861ac8bda1594cd3c4ed92bd0d22d.res",
+      "Recursos/Otimizados/37b0be08a7671c93f48cb216467087a51dcb4735ce872a5249564039fa4f19f9.res",
+      "Recursos/Otimizados/39c9f97d67174a328bbb1e25e0707fd382cdfc7dbfcf5b4aa683392d61a5337a.res",
+      "Recursos/Otimizados/3a865818127b26af8f1a4178121d51c224b654e65cfe08bd4b78764ce3b7d52e.res",
+      "Recursos/Otimizados/3b20dd599f5fddab4f4051f244f4f78372acf0df9f091335cc9c3fb8d4cb4dce.res",
+      "Recursos/Otimizados/3b2f32e081809acbe684ea29234df99cb28d6c721d81f2327f03fb7f1a8d46ce.res",
+      "Recursos/Otimizados/3b82145a17b2fe442d112425a1afc4435e14ebf811e7e499a6060f838078ef5c.res",
+      "Recursos/Otimizados/3bd7fb56d66c82f38d8fc01272a4605b60659493b234b32ff4627eb710c2fe76.res",
+      "Recursos/Otimizados/3c11485f26b96d0bb554d200c441477957fc9ae58825964dabd38ca68c167881.res",
+      "Recursos/Otimizados/3c4c59ee7509764e52d4634765374d3d6e0261b3717b832d8af796d2bd70c4d0.res",
+      "Recursos/Otimizados/3d0fb7407e64e99054d8540c3e1dbeacdb868feeb48e3f059fc34124bfd5b732.res",
+      "Recursos/Otimizados/3dbc04b1f1db46ffc39bc24293a69f0d912a6abead647ccd1842286226dbc876.res",
+      "Recursos/Otimizados/3fce5674615207c156df7c4a952808491fbea3f4f6dfaf5a0a2c53fcdbe20b31.res",
+      "Recursos/Otimizados/402414f5539bb1b0e913e1d8b52afe8a8cc85ee2baa48572a7bf64ac4c689f80.res",
+      "Recursos/Otimizados/4062c123c66468ee9b757c9b76fd12f765fc392a3f06d9723cfd94dd118669c0.res",
+      "Recursos/Otimizados/416b0756a7df35f8bf4ac9bee15b2f83ea28e0dc78e49c7c78f1dc74021d2a77.res",
+      "Recursos/Otimizados/4183d0f669f6ab8f30112da3c359ce57e0a0b90c1370c6e00bf791b3baf7ceb7.res",
+      "Recursos/Otimizados/41ed41ef10153a363c99fbdb6ca2759f687a4d297121eff6ef4c2ec547c63626.res",
+      "Recursos/Otimizados/424a02a590589c24976d74fbf70c3326a122fc21713ae9e5acb5a8fc552c780b.res",
+      "Recursos/Otimizados/4281bb33ec64b1f126e411028e2a20d7f9313b1a56e54852767ac84cb5fc5b63.res",
+      "Recursos/Otimizados/42aa76ed786573830a642d52422d09a01a095fc43c2c41110096a2d146502f3c.res",
+      "Recursos/Otimizados/43b14098c940b2e9aacdff7531e5f0e6a3e47ec8267f7a9e6673cbd5938fab9b.res",
+      "Recursos/Otimizados/44cbba6300140b94ac183eea76a057553dd8b80e463b341006b1e28696379768.res",
+      "Recursos/Otimizados/44e4766aa570af216bd290e5f6139068aea2445c4b68ce7bc3ae7b5d2ec26781.res",
+      "Recursos/Otimizados/45846033a941725aaff77063ef31754a237f4991856657b65eb4c271fd0c82a4.res",
+      "Recursos/Otimizados/45fd241c5f68f69d0fa749d55230e30cc7161f275f49378c5e86227aeaca7334.res",
+      "Recursos/Otimizados/48ee8bbc7dbdb9d95e6956e72c501326f1e9f3e07b4631c0e591c5e7ae8ca365.res",
+      "Recursos/Otimizados/494c69f63b5ffd23b64400f3f151e99002e9b504d6ca56ee12d3bbd80eb48f37.res",
+      "Recursos/Otimizados/49f374b686054e9de4f3a1aed64c9984e5f3d9510033c06fa4e9092004a23805.res",
+      "Recursos/Otimizados/4a1451bd4677230e3f95c99e1e8440a363abdd982633ef0a605163c9ba488c71.res",
+      "Recursos/Otimizados/4aa3d9bffff1762b67cd335ec2a3a83993edd2e2815a4827845b860a1f2db186.res",
+      "Recursos/Otimizados/4c2e093af0f09347707b8a0476ed56ea034bf3fe3188e22171b167f486652acf.res",
+      "Recursos/Otimizados/4c65b464b8efa377baf0d6e4e1a31e8e446415e311ceefc357bbf257c6879f73.res",
+      "Recursos/Otimizados/4c846e3cc0a7ab458c742293a5df9542a8e1566cdbae73e0a8e836127afa1cce.res",
+      "Recursos/Otimizados/4dc8dd5524e474cf9f5358462c789b78e8b0fd081521ecf3cc6c8df36e3bd50c.res",
+      "Recursos/Otimizados/4dd7db3667ed84b86d05b81d62ded62f94db7f8fec17038774bdc5b1031e03f0.res",
+      "Recursos/Otimizados/4dec3421ac4811e307bfabaf6d0affd107b530cc7d836478467c325c7845af14.res",
+      "Recursos/Otimizados/4e7afcc82eff095d5b8a3b0def98038adf1dfc9168cf9aa84620b5664ec46304.res",
+      "Recursos/Otimizados/5022a897b85993c5d23d2cd892b709cb4153484738783886f91dc3bad3819871.res",
+      "Recursos/Otimizados/503cf3bd690e7f91fe399abc7cae8e342d0387dd878a219d2e029f2999879e0e.res",
+      "Recursos/Otimizados/5054741613d42e39e2299ac50a81f680bd1d191300cd64f07316abfc257b6bba.res",
+      "Recursos/Otimizados/50a44afa47ef78de5c871df79336179438fd7681b3fba1e4ad356359f9fc86a3.res",
+      "Recursos/Otimizados/50ef2b3b4258b4f8a6651e416f1e0e5fb90c98ade9b6c0af27d5a7bc875d6846.res",
+      "Recursos/Otimizados/512f28746139a5f0e85bc204138acb0e5884279a8ec1535a766dbe77349a7152.res",
+      "Recursos/Otimizados/5165551dbfdc5fe0d30ce0911c08fbb9f6840de995748e4cb63d3fcef4b26941.res",
+      "Recursos/Otimizados/525b2e4a6e6a277babd481539a1a4bc7cd1d0dc7720d053f2129d0e7202476b7.res",
+      "Recursos/Otimizados/525ff562a5e3030413d3b37c422e6f5edaad3bad8f0ef75d9a5aede60624a9ef.res",
+      "Recursos/Otimizados/536370b92a4d83005a019f9038c265d7664aa0bc46e90883fe9865f22c74398c.res",
+      "Recursos/Otimizados/5421ccf116be0a58bf5d4c368288b1a6f6f1c20d5887a9e4ccc28ae37dbd0e76.res",
+      "Recursos/Otimizados/551f94fe85d3afc8fb2674f85255755280b74e975a760d5f728f6243dba458d4.res",
+      "Recursos/Otimizados/558761cd6e79fc45010e23adecd095f86344399de761c8c1361587de6ef5a059.res",
+      "Recursos/Otimizados/567e5a687fb476f9e87c7e10e84b17d5d6c5e253291968e8fdf138e9617888d8.res",
+      "Recursos/Otimizados/5703284f1ca20afde7adae6c275dd7c8758b9a24bfe3f874e20e418d8f94962a.res",
+      "Recursos/Otimizados/575c75b0406b3f5c6ba6dd70c2f51590516b3e709a3410568b2ea3e0be4085c4.res",
+      "Recursos/Otimizados/576dc6fcc49795bbde58bdc62867b3b0272bea5572cb147f88735b6b9156b469.res",
+      "Recursos/Otimizados/57abb0067ad98a72a557a964e43b8861782c893de7de5882b07c91e9c45dac0c.res",
+      "Recursos/Otimizados/58372f1894317d4094f81a32c0dc86d4c24663c0584663938ff7cb958e162d60.res",
+      "Recursos/Otimizados/588d0f6adb8c02ffe20b2d7b58b200d367103e0c03534690cfa1bb220c08a47e.res",
+      "Recursos/Otimizados/5999ddb82a2964cb58f3e93d63e241e9356d3810a191feaf7c9c4f878abe8417.res",
+      "Recursos/Otimizados/59dbea32a02ab468de58ca85c7029227d3e54c473b22a137779ebb3f1b0b2334.res",
+      "Recursos/Otimizados/5adea25bb4cd51b8a661c41d1fe37893ef2a43b4159675d91de88a2e6714f9ba.res",
+      "Recursos/Otimizados/5b081ae9928eaaf1dbbffb0396e1971a574b65ecc128ba162fde07f890704f5e.res",
+      "Recursos/Otimizados/5b9c66c57127bb49f2500d02721e5fae94a0ebf8abd3eaaf8d25cf8f7d920bbd.res",
+      "Recursos/Otimizados/5bb055cb0fd1f2a0388923a710e9e878c68ba29b1213df874097f3293f60ade5.res",
+      "Recursos/Otimizados/5c1e2fe8ca9ec2e73ef68f23f344d151174fc7aed0b6cf39ea6798d533c4d74d.res",
+      "Recursos/Otimizados/5c1f7fa725648a51bc126d4267d6171ab34d5061d3f967d2aaf5679cb9f5ca97.res",
+      "Recursos/Otimizados/5ce81a2fe982d6ddeb2c0c39417e6673785c1b6d2a41e1bc9c4d7d0a1860672b.res",
+      "Recursos/Otimizados/5dd2d2ca0822d52e964e1e613d9b43f66480e2bd8a52980cc6ce3f3eee5f0790.res",
+      "Recursos/Otimizados/5de4a19883dd96753bfc8aeb9f887a501d09fddb31dc31f921d8ceeed3f8dd3a.res",
+      "Recursos/Otimizados/5e546b9df3ee24186b44fa09ecf03bc2411d5e045628e80909f8e4d73d5ffdac.res",
+      "Recursos/Otimizados/5ef377e99b20dc4fec95f6cba65f5153d25237bd7e52b19f8e9c2db4b9bce526.res",
+      "Recursos/Otimizados/5f628cee863bba6d0c9aacf66fa38f031a7ed138e5755b5e4c86e9ae62379a23.res",
+      "Recursos/Otimizados/5f6450f7ebef9493ff43e1c5e33c92f6f239ab705cd522ef0fbedef605962221.res",
+      "Recursos/Otimizados/5f9e86c5bb9e69f9c0fbac39ce3f2a7995099be5256a5386b85cd13c58f27ac9.res",
+      "Recursos/Otimizados/608b44e84fbb68ed14b998f1164f0c0abbdc6426c9dad017da35a298df0892ba.res",
+      "Recursos/Otimizados/620dad72929f33799ed2b3e8615476d915f5d9d641a3719a9a79d5ce510dba2a.res",
+      "Recursos/Otimizados/6379b036c0bd02cec2f1d1579ea65f6fbff832339407b65c15f09da749b89b48.res",
+      "Recursos/Otimizados/64c1466d5b3ce2edb01b649118326307acd6eca6182599c0abe14caf632e1f90.res",
+      "Recursos/Otimizados/67334933e2b01b59f69da5b59751febdf7cd26a3e795d14f71b7c38210e35796.res",
+      "Recursos/Otimizados/67dd74d565ba4eb1d5532882c56affaf24a5928b4534151b50ce63cf4f045812.res",
+      "Recursos/Otimizados/6a2e14eeeafd964c728ce186820b4212ec7d2504f4438826f132545f5a035069.res",
+      "Recursos/Otimizados/6ad9a162905bcc823be10178f66403b2ef9fc344606e082a7b4178a024178502.res",
+      "Recursos/Otimizados/6b467134886ff3567f1a3e1951c7788308f898675b93d8c485c9eb099a254394.res",
+      "Recursos/Otimizados/6e756bfe6a3d1cf4cab65ad7a4051455c7bcd31d5686b0a159388042e43d7b13.res",
+      "Recursos/Otimizados/6f8e83fa13b21d83e1564c73426b2c712b7258a0aa58e30d5b5660ec888819e5.res",
+      "Recursos/Otimizados/6ff23cf1676931b69d118e9060500274d369aa18483704270d97437b5bbc4143.res",
+      "Recursos/Otimizados/7082f29e4d92297fe4ee7709afb70b93ad34bc2084d68da0e6f205efc60b7302.res",
+      "Recursos/Otimizados/70eccf116cf8e6ada52aacb8adc8d0fae9e535efd716b52f67baab6bf100b7c2.res",
+      "Recursos/Otimizados/7112d97d41329b1aedd618bb686b7ebb7940df996b936698d7d516824394a4bd.res",
+      "Recursos/Otimizados/7185ffaf6704855ab9c4998841621cdc6bfed035b4f9bbcb347fa9914955043a.res",
+      "Recursos/Otimizados/728bc524c1cde60e573544af92e0f3fd0e9455ea3cf1c3ed5712f81ac82388d6.res",
+      "Recursos/Otimizados/7388622888e6baa6947d43f17c5a4ea0f6eaa32fbd0eab69e68e159129bea75a.res",
+      "Recursos/Otimizados/75313d3fc67675f1322773d582cdcdccacffa324f54110beb7809f50526c3a26.res",
+      "Recursos/Otimizados/7559fcfaa0ff8baa6ee8050bda3ee5d0e1eeda85ca8721ee9e6c4d9a310e56b1.res",
+      "Recursos/Otimizados/75e9a0451ca4fdb8b5fe701ba4a946bbb6711b48d332bdb6ffdf7cb6c016ab3c.res",
+      "Recursos/Otimizados/779e1bbb0c9011cb380507accd4db61f9d03e815bacb123305a11b108e8f0483.res",
+      "Recursos/Otimizados/786004a838cf95a5179e1e4c683b0aa6393e2c59372790c3d525592485a3caf5.res",
+      "Recursos/Otimizados/7ab8391aa2038ad0176cf06f5a9905dc7154d34864327cbcb912edfc7c5a4271.res",
+      "Recursos/Otimizados/7c478582863303fd350bc07e761754d2c0da50574bacd7ff3f980501cbeea9ff.res",
+      "Recursos/Otimizados/7d35aa23f468f5ca7115b506d7b19fe17e0e7b457dc6abe49766012f7c6779cf.res",
+      "Recursos/Otimizados/7d8e2736fe42ba37f86610527369c569bb2f8a2fec05e09d4898a4390398900a.res",
+      "Recursos/Otimizados/7deb1e1b33d35385a2e87c59a45238016ae275dd74f02494f6af67157bd4651a.res",
+      "Recursos/Otimizados/7e509e2d3c3a80ac11f4538bacd6efe9db7254bc4e0fe40168f7d914f664ae09.res",
+      "Recursos/Otimizados/7e5b964c9a284891c622be6e17f1822f2d83e9e23b2ef18b94307498c80ba971.res",
+      "Recursos/Otimizados/7e7f252d9bb1cf1d3f1996e625be4ad9da90109f94edc6f6e9f5b09c053b5ca7.res",
+      "Recursos/Otimizados/8031b012662d76e1a9a483b4a7fa203c320363dd626aa40456ec1000d7291d5a.res",
+      "Recursos/Otimizados/810d067b5bf6b2772e059b164641abd5c916850cdaa09ee5559a57aa02d1fc88.res",
+      "Recursos/Otimizados/8140bec37e25c65804783581a82978a147a740004e00fe97ea9d14cc7ce3ffde.res",
+      "Recursos/Otimizados/815904dbb631e3433f2e656f810ba966977c8817b9866ac0c6352a386a80fc80.res",
+      "Recursos/Otimizados/81dc463bb3bb1df53302b612d112998f1b54fba1bcf2f664f77a40d365e0e9e8.res",
+      "Recursos/Otimizados/81f761b880a2629dd969c8e3584f828d821962878e569583231a9ffa5bf02ede.res",
+      "Recursos/Otimizados/81fdedacb2834b1ed15793ff3d664bb57c017beee5d543f59780e403df349faf.res",
+      "Recursos/Otimizados/825385ad2ca0ddf406c1f9ba5485e285dfd4825d7d99c4f07a3a00e21ad4124f.res",
+      "Recursos/Otimizados/82cc2bc745fce8ef646fbe772919bd002198044300a4a91deab3e274a8d83c74.res",
+      "Recursos/Otimizados/833927ecbb3645b61788a42c54d650a6a1901aca83438d8c5e6f29ed1cff8771.res",
+      "Recursos/Otimizados/837324ba2ef3b8d23d7c647e03522fa9f218b47dc9c27c2e1bfa39282a400d3d.res",
+      "Recursos/Otimizados/8389d229383f0724aae67597049f6c121aefb4e4faacfcfe6be7c7ba5947ed8d.res",
+      "Recursos/Otimizados/83eaac63b213612de190866816b0994381572f3efe5c6394a066a2b0693eaeb7.res",
+      "Recursos/Otimizados/848fe958e9b928beaa7c170e644b1459a725c4dedaeef1faf5d73fc659ae8a0c.res",
+      "Recursos/Otimizados/84c5c4241657e3df39d25a1ebef9200e68db3611ecfcfcff1268806630b1c4e4.res",
+      "Recursos/Otimizados/8544d86f17049b805223eab9e8e66f5af1eceaa4df9172b78baccddc8775b3f2.res",
+      "Recursos/Otimizados/8551c8db86c7b7ae3cee7d94854982a79dfe41ec2c8c9d40b5f6daa6ffa2fed1.res",
+      "Recursos/Otimizados/8591b52533176a64d7dc77a42bb4bed5ac3048c1bbbcf93e8aec9b1c72280110.res",
+      "Recursos/Otimizados/85bee719854e45a79a82cd0a44a3aafcc4dbe7a82cc0957841cf43cf5002bc3f.res",
+      "Recursos/Otimizados/85ceb16d662cfee53b7ef340008c3ce0d18cafd01e9e3e5e73dd48d799cc994f.res",
+      "Recursos/Otimizados/86e86db398fb2569cbf55b7389f3688e2777571ce0638da45718070f0c04a56e.res",
+      "Recursos/Otimizados/872330d3a3201b4ae3fb8e4052813401190fca17bcf6a93396e33d59fbdd58f2.res",
+      "Recursos/Otimizados/8856083b0081acade1fb4e70de9c10ea0e0620264b61bb4d364c9e1d2b154306.res",
+      "Recursos/Otimizados/8856a7960c6a6ac78d9ba9622ff5d982efbe515524dd69abfde48225a02d65cd.res",
+      "Recursos/Otimizados/895785f176c0d9144d0ac29b6fba447c3a0ff2d53d56ee50cb3912f6b1278f02.res",
+      "Recursos/Otimizados/89789677ef1d2fa82d57e01f58d1c05ccdb3b8b4e9414a87c04ceed65f523da9.res",
+      "Recursos/Otimizados/89d3b38d7d4899351488be9e8109696dc06c796c4f1385d5b554b022368539dd.res",
+      "Recursos/Otimizados/8a4df12e7c8acfe3ffbbdb74162aa02be68b8558ce45ac34e6a5d3dd1c89d95e.res",
+      "Recursos/Otimizados/8b9b7b5170b993824b6134ffa2cf3c8551d17cd52395bd261c0d0baf98972f52.res",
+      "Recursos/Otimizados/8c0ed79e40868022fd9994c4d54c50d0e39ec6437c20f4c447069f389910a664.res",
+      "Recursos/Otimizados/8cc3e4e70865ad0563848a5d42daf20e37c92f16d1ea6091d527044f3707373b.res",
+      "Recursos/Otimizados/8d59827ee29811a7360a1929d8c188fae2aec763642418392e630571d4d5cbe4.res",
+      "Recursos/Otimizados/8d9b5f43915cd5d968e5360e07819d0a1eebc5e120f00a4e263de3e8037a72e2.res",
+      "Recursos/Otimizados/90487b371f9b9d9f59a53680167484e4b1b6913e7b2e523303ec2f3ad90fd1f5.res",
+      "Recursos/Otimizados/914c0ebe17b9fdc5fb2f1f6b5087b114619822220b6bef636a98a7f34beeff38.res",
+      "Recursos/Otimizados/91b549ba12284619110252b57beef9cb24d43b70ca1af806ccd41df8b395cff3.res",
+      "Recursos/Otimizados/9209f582d6d4f363a6017c01724a0e760699d54ab8dee3d963999578873e0641.res",
+      "Recursos/Otimizados/929890baacbd5be3e8a6dae72ef5c85e0f9a6011f6e224399e9c532dc5aee2de.res",
+      "Recursos/Otimizados/950e2964ffd766346003f22af522b73f0c1c936a4cddd9818203488ef2809fe0.res",
+      "Recursos/Otimizados/9510afeabcc2591ef5754860c7ee95cdd1c0afd78ecc7a4f5f7263659b9346a5.res",
+      "Recursos/Otimizados/953e32ae4a48ca9267e1438a4b5180f8354a854970de66246f792f4c780a2f3c.res",
+      "Recursos/Otimizados/955a148f09c8ec9c39aff1a8c32c5c21b8027ee7ccc17211ea72914d40a8cadb.res",
+      "Recursos/Otimizados/95a4f6ec453b3560cfae8364a13e8e698b1c4bc546e798b73992cda42c5a2d60.res",
+      "Recursos/Otimizados/972969b6143c916c2aacb157b0292d84404ce7a1cbaf8e18dd1a5d1a0e6bbff5.res",
+      "Recursos/Otimizados/979c7cb6ccc95bee72d647f775835b9177781e9ea41a166cf9d244aea96550dd.res",
+      "Recursos/Otimizados/9899512252c861560a8d94a49c7d46d927d8c0398898f4624fc84397f6a25dc0.res",
+      "Recursos/Otimizados/98c80b3de33281c448c049eded62641d7a76df7cc7393358507a3a34fb0356e7.res",
+      "Recursos/Otimizados/995a3656e52ae172d246020dfc5b647d88f4121cf589e8cd168811d3c789ec69.res",
+      "Recursos/Otimizados/99d4f93bcb16fd97e54c52ccb14cfdefae0e4a7cf05163b250bb15bbca71e248.res",
+      "Recursos/Otimizados/9b1111503aac6ef9de47987f7f1fed2f41f98c11aefa4488ade78bc587bb36d3.res",
+      "Recursos/Otimizados/9d4d043cf8dc44bc53c0ba38c60bff2e26ac281dfc991ac76e5605fb7b8f059b.res",
+      "Recursos/Otimizados/9fa0b43a73888dc489563c5b72c7be59ae205d198c9aee1b490c503bbc88e9fd.res",
+      "Recursos/Otimizados/a04c7bdb3fcd4e6b9731685a1e37613bfce1d4ac9dc837e7d7cb256e32d38d60.res",
+      "Recursos/Otimizados/a0764a3d528f268f049ae75f31bbb9ee5f94d5def0df0e05d2bbf620ba363f30.res",
+      "Recursos/Otimizados/a0a9056ac033a03cee6a086d1cd2d25c90db089a5ed6e98879d6960a61897447.res",
+      "Recursos/Otimizados/a1983a8ae303e3db68a2bfd47c9ecc22f5fb8eef1e82d65acf4ce2adbd9232a7.res",
+      "Recursos/Otimizados/a2a0df6245ff40cf432551c2009e480ead3c513b9e82ec6a55d1c16a67ad2a50.res",
+      "Recursos/Otimizados/a3259914dee0ec7c5bf64902ff7b756a8b5781bda73d59db388427bcad36baf7.res",
+      "Recursos/Otimizados/a35aa743102a927d6e1e711b3a61ec5c59af69808c908b1385a7e59271448b53.res",
+      "Recursos/Otimizados/a592e21482740ddfa2463023a000a1573393fa71cddebcb5b0a37a09d795fad1.res",
+      "Recursos/Otimizados/a5a5bb7a33c1de6ae5e31c813232ca3cdb8290d608b71b43179223843e431315.res",
+      "Recursos/Otimizados/a61a38f3ed666299e64e31205be3c51ac788f5816bccd0a48fb08f8b784b5e9b.res",
+      "Recursos/Otimizados/a7e7fdc400ca3a36ff8e62b1582ff235419eab91fbbbc2bbd0359a9f2ae9276d.res",
+      "Recursos/Otimizados/a82419378b86e303ef12dd68b8e539d2423c6cd5f5842dcefe1cb0584c669701.res",
+      "Recursos/Otimizados/a88d9e991049aca96805f4c0e76390341ae12b8aa2ab1bba8ff0077bb23f188b.res",
+      "Recursos/Otimizados/a9542c6b88838736b0237ee67a8e72a31ef2cdf7bbf95a4e2eb125b5a1205a2d.res",
+      "Recursos/Otimizados/aa90d4aeb9557e9a69c8980ae9acb32b6b1061a37313360699a73a8b776d06f3.res",
+      "Recursos/Otimizados/ab12d8480ac45c8c1ffc0677e8b8ff4600619176a9e76ad45a1b727727afd8a1.res",
+      "Recursos/Otimizados/ac0c6fabdea80a5a2a457f9a82153d1bc63a213711cccee354be48d3e15d550d.res",
+      "Recursos/Otimizados/aca6f39a5357cdddce1df5d40ce725894906741dcb5108dfa6953caac703c341.res",
+      "Recursos/Otimizados/ad25af821c0ad1d5190ba5a690cae999c0d8d61ca713f7e8c285f0dfdcc0b868.res",
+      "Recursos/Otimizados/ad5420361505efa38282adaa02bf945c9a79e47c2e7439338ef91cd7d2821963.res",
+      "Recursos/Otimizados/adac60986c37d319e1bffb333cbae4ab148ce17eeb0200c1d30b1a9c0c5a9362.res",
+      "Recursos/Otimizados/adc2a839172b784195f4c136f5181f1c8174c15e70b473b53713085577411fae.res",
+      "Recursos/Otimizados/ae997b082c767b21da31806b610ea105e01e5bbc8c01148e84ab57845f425bff.res",
+      "Recursos/Otimizados/af5edfec1fe7ab1b3832f68f0a1d57d1b1a4557cd74671fce1398e5a2da2215b.res",
+      "Recursos/Otimizados/b1ae2b2d88cb1a8c2e96f8b6ed3a5a75bbb0eb6cbb078f1d607dd519e49a2dfa.res",
+      "Recursos/Otimizados/b1c27f8c0cbcd3291cea084243e621eee192a918885c54d41c88fa3f137ca6c5.res",
+      "Recursos/Otimizados/b1e2dde05b13a45c40c7a5ca5940e1adef624ee6018946ef35fc0e3235bc9524.res",
+      "Recursos/Otimizados/b3b44170b8cf43926f119118341e7e9c0185a5a39e05c86b88b8265d7c84def6.res",
+      "Recursos/Otimizados/b44770483cc0063397fa0425d848721c92d21aaaabe503379879f47acb50b08d.res",
+      "Recursos/Otimizados/b5762fd2709836ef746b3bb058060c69387440571a259ceb7ffc3980dbb226c3.res",
+      "Recursos/Otimizados/b5f9e5659195d4839b4d2f589a5b8d4b1858d28b9ac21b3a09e261ba694e4955.res",
+      "Recursos/Otimizados/b5fb308afbc1a962ff5c8003682c57a3302135a48195a33c119ea1398feff24a.res",
+      "Recursos/Otimizados/b703a37a5a3986dace2cc253934ec79913e81644ba3104ea916c71807983696a.res",
+      "Recursos/Otimizados/b7112ca16d7020aef5eb2a672348b69a7d78d79b127698b57aba80731e883b4e.res",
+      "Recursos/Otimizados/b73c84a17aceb500766de38883e95514d8069ed5852dda67a6e4d3396ed51960.res",
+      "Recursos/Otimizados/b81344374bc72b71f6e70111cc5ac340d4dc78b5fdf74dafd2a180c10f30433b.res",
+      "Recursos/Otimizados/b88192003bec70199a90ffedd6a26cf620fdfa35b0e21ec9a1d1de65364487a4.res",
+      "Recursos/Otimizados/b9f77b1e0d315b1ee52339faf0b87a75fe02844fd2ba52d9f413e77484695802.res",
+      "Recursos/Otimizados/bad27e790fe638d576d9474e0d68eb26b31c8383907687db78a4e6c9827b6666.res",
+      "Recursos/Otimizados/baf7ff90d554d3fb4ebd46e958b9bb06af3492daf93148c96d443daad8ff787a.res",
+      "Recursos/Otimizados/bb0fb2890aad8ec3338a7563ba6581f929b0861e46df7f492b0d44d3aaa16a13.res",
+      "Recursos/Otimizados/bbfe4e28c24e7b82d7d93f190d0680f8898a74f1e2fc58326b8b58a37f54e663.res",
+      "Recursos/Otimizados/beb0972f243fa316d4e788037c53e287258c51bcf01ec199ea84f29bcdf2f2f1.res",
+      "Recursos/Otimizados/bf205c221a713914f7fdff43e35552de529bc57abb49f061dfd8f95c795deee4.res",
+      "Recursos/Otimizados/c10664217cf0e90084c9a675853b0e6f80a8528ed800cb2da6931cb62b23fe42.res",
+      "Recursos/Otimizados/c1518786fc5fe7c8899e13bde48fb3e79a17eeac69ae62add5273e025ae1cd2c.res",
+      "Recursos/Otimizados/c1a77d1055a849551c314558f38dc4d5f736747e366d4929d67f3c517f29d0f7.res",
+      "Recursos/Otimizados/c2473c9e635c77910a01588ae502429df26c48e84d36a6e63a1acd188234db6e.res",
+      "Recursos/Otimizados/c2b188247eaffdf6fa8f524a2f29d1fdf0a6bc9cd6d264624ee911abfb914550.res",
+      "Recursos/Otimizados/c2fe350b5d918aa25ce6c312a19ad048238a46531255f869f95eadc70f1d41cd.res",
+      "Recursos/Otimizados/c377dcf1c0904517d16d25f670332088999e828d6d58a2e5ed96bea0f6956b33.res",
+      "Recursos/Otimizados/c3db550ecfd0cfebde2f9d1f880e9814441c4b43f4262b5de12ab26b07eb826f.res",
+      "Recursos/Otimizados/c3f9284c12e03de30148c6a946702c529dc5d89f936a1d2eb8347363c991e84a.res",
+      "Recursos/Otimizados/c43514bfb4e1a4a4dafb49a2e495aeb6e029562cb5815985ca7b9838c43809b1.res",
+      "Recursos/Otimizados/c43bc3666f85f5bce20811999d468e422af15b665d2f6e33d0027211da807f98.res",
+      "Recursos/Otimizados/c5302006cf32e11af28f151dde8b54924949448547c77dd5ff73c8a04f27a75e.res",
+      "Recursos/Otimizados/c6d8ad1ed6cf8f7bd1169941e85bc5c0030fe8c2450dc7e15a4b0bd70e613e27.res",
+      "Recursos/Otimizados/c6fa3f0a83c1ed3176d91010f43537ac59e198631b473de73fe5f5e5dfe253c6.res",
+      "Recursos/Otimizados/c87cfca201dd5e0a1d4fe795aff655661663a6411dbb5f29dfb27738d85fd7a5.res",
+      "Recursos/Otimizados/ca5d5aaa7fa5ba229fe196aa490e5f607b57d672e3b50befc3c6033f228bedc4.res",
+      "Recursos/Otimizados/ca967d89535301dcf0b79c9fe82be002e52545a2a1c7e254d092d24a482bb8a7.res",
+      "Recursos/Otimizados/cadaee005d8bb0b2491f7208856e63bb5b77e9934acac685a9bd8d1ec8cd2aaf.res",
+      "Recursos/Otimizados/cbc020cd9c891d23f7c14f3258e01884ccddf9ccbc7485bef4ec97e82bc9234d.res",
+      "Recursos/Otimizados/cdd496d57cd2d4780ee6038dafc472b8f5badda6511654891606e146944d7f7e.res",
+      "Recursos/Otimizados/ce751d582fbbd75272c9b9f323059b43980f3c5a3294880ec8d3476eac63b4ef.res",
+      "Recursos/Otimizados/ce89cf6028dddcb722f6bd85449fe468924224959baa8705e8c20a67c770cf7c.res",
+      "Recursos/Otimizados/cea2044a5949876916f14a5ff596fcfe111b64ef996bc6dae8a717f28eba97c3.res",
+      "Recursos/Otimizados/d04689f6cf6ad22b1237bb70e906256a52e528537426612a78e7f8862bd4fb70.res",
+      "Recursos/Otimizados/d177581d57077892886509b9046bab8bb446171f18816c6efbff2fa985f242d9.res",
+      "Recursos/Otimizados/d19a727e60a1ec4f7b9374c023f9a6c941ce7e87e99ccf30f5fdbc61fc55dc34.res",
+      "Recursos/Otimizados/d220e119ea270492e8492ff54a3bddb82fa380b45b699117bbf146f88e1c243f.res",
+      "Recursos/Otimizados/d24e0f60fd859871061337c2746ef2a26bc1cd271f23386f35078d2e2ab4e709.res",
+      "Recursos/Otimizados/d28add48a7801c4fadec037d746af47e41f6479e1dfb86ebb551ab0cb9d2019b.res",
+      "Recursos/Otimizados/d341411452391baf7362aba0bc216370c118511b28d0f55d2000a835c4713ee7.res",
+      "Recursos/Otimizados/d36a1cd6e7003053b194e5766da040950e9773c7fe30492f102fec9a58f847ed.res",
+      "Recursos/Otimizados/d5134d07847740b8a77694ae59d295fe89b173550bbedd182792f242c3dc056b.res",
+      "Recursos/Otimizados/d5cb4c352b09083d253fca98a2923a2ef5c6d6a55c86c915b4b3dc2b55e4b9d0.res",
+      "Recursos/Otimizados/d6b63b7d2d16e7e28ff0439196f8aba637f2c7265d580913a28644ec05576860.res",
+      "Recursos/Otimizados/d7b5c475c8c5f04dc911881bd32cee37c0b258d8b0646f679bd5b48623aac300.res",
+      "Recursos/Otimizados/d82b73ce486f671af85e8d342d21cc00afabaffe0bc3c55bd5114eb7b40cce6f.res",
+      "Recursos/Otimizados/d85a80bea43e5c588ac213af94c809e3a6b7240d27f7a63fade6786faa44966c.res",
+      "Recursos/Otimizados/d8decf22697e826e7482815215e11d5746f1a6457a7264fb672494def5b5dad8.res",
+      "Recursos/Otimizados/d97876c94216fde52c81de3ab30b4114e3d61ab41c7a8ab470739136d47560d1.res",
+      "Recursos/Otimizados/d9d431f0a3163a59b945248d3929d400c1fc905c5f709d5b7ad413d895185ef0.res",
+      "Recursos/Otimizados/da18878ee9b84573cd822787cb21b2f30ee987850710dd25e19864eb223f42c1.res",
+      "Recursos/Otimizados/da65b69b2a636f244314da06ad7f48cfacf0df6fc52c5c8425e733624db4211a.res",
+      "Recursos/Otimizados/dacea772fdc2af9a76eb182ab5cd681d7fd7c27c1757a8bf8e7c52fc8dd48f02.res",
+      "Recursos/Otimizados/db0472e5b582b84f73d2955d9cf76a015d6ebc387efc72d3a5d547c3cf4b438f.res",
+      "Recursos/Otimizados/db17b60cc3efb7f8658723c8b8c15f0718a82ea2a3f5a3894b39b88148c5bbfa.res",
+      "Recursos/Otimizados/db7671452c8d56c7cf50df8018948941925db74763fceeb6a0d1052d16c1ae9d.res",
+      "Recursos/Otimizados/dc9c83f049714216cdd3c36c4977146ade67618bc9cfe4bbda04bf61e831956b.res",
+      "Recursos/Otimizados/dd1fec0f8d4c28cad51f07e8506239fc10a98f1f0a83e3a5df11826438a11dd8.res",
+      "Recursos/Otimizados/de753c1b8531f6d62ebf764e4e5e5a4e6538e5ddcc473eea3cd272ed7fa0e39d.res",
+      "Recursos/Otimizados/df0eb25f2063721ad0c0cc8b2239e58c85b0e686548420517c49130260e0d4ad.res",
+      "Recursos/Otimizados/e06621cef0c8808547fcfe0f0466b74dfd57bb5a33fb6240544d20767cf007b0.res",
+      "Recursos/Otimizados/e0f9a5dc1a99d51bbe7d98f15a717f471037a8c468f327916ad7e5fbdd2c3c2a.res",
+      "Recursos/Otimizados/e1050920e1d2fe9cb355b95223d044f01afafdba61883dbd84b8d4d15e32f041.res",
+      "Recursos/Otimizados/e21f68e9e31ad753732bbd4d3e5a9743a3cea32815d69142119e880525691b69.res",
+      "Recursos/Otimizados/e2c0baec3bbde5753c7be32285f0d5d30dd3cd8cda8c35b7eb5fac4e0a9ff6dd.res",
+      "Recursos/Otimizados/e3cca244502a66e6b5a5fd10741c85d6bdeed91747137236649bf926d6bdf0bd.res",
+      "Recursos/Otimizados/e40750ddfee147833d54279533b5b0acaa75271549552e9db3933a92a25e7ce8.res",
+      "Recursos/Otimizados/e6be9e5a5b5db8216a4e987394be3befb60bcd8467bc10423c5dcea72b9dba60.res",
+      "Recursos/Otimizados/e70c155f6e979e0c5b6ea7ea08d3a3e22d4e2d28ff8705691ce9b5c2ec14636d.res",
+      "Recursos/Otimizados/e76675900bb215ff903c3e2dc273678dfdc2b86c2c0fbedbdd55d60c7cf75e46.res",
+      "Recursos/Otimizados/e7772542b3b51c37732d9dcf1a9491a29a9460f0f0cfece1e2876462cd9486ab.res",
+      "Recursos/Otimizados/e832f66390b7e56c1a4d4d0062c1288603be9a8a5c9bbcf94ebab15f05ec1cab.res",
+      "Recursos/Otimizados/e855a5c3f8e984378416f6321ea9acee7df378e834fd3234c2ea2c275deab5e5.res",
+      "Recursos/Otimizados/e86c31fb9b0a55e6a9d85bb8e4a5821b2fb4931cd18656f14f714a539faa5dde.res",
+      "Recursos/Otimizados/e8b0b4dec4f1af3bb053bb389a1411f9bae2afe19a21049e35cb439ad3986046.res",
+      "Recursos/Otimizados/e91f60e287c9a23945ce69bd71e9e0d5610c9c844e7ede014f87fb064ad9d333.res",
+      "Recursos/Otimizados/e94259973ea9afd1fe41b53825d7ceb3c1e6abde4184304fa9fa676fd516efac.res",
+      "Recursos/Otimizados/ea01d7cc185d23c23eb4d7604636bb4f45755d81b413aeb946df3bb8e311ac08.res",
+      "Recursos/Otimizados/eaa9928073c2ecf7b448e578ac64df4d726a239073a95c978fd6803317c3bb4f.res",
+      "Recursos/Otimizados/eb29967d7615a2dec02c9d3b045fd4e910330de077e32088d168ab51a3bd7b97.res",
+      "Recursos/Otimizados/eb70b7c3879997c6f7ac38d0562cf5c2c696d702033e7bdca9bf8193b545d28b.res",
+      "Recursos/Otimizados/ec32679013e1fc35c391544495e45b8c9d787e5d77b27214f241369335af1b09.res",
+      "Recursos/Otimizados/ed40e038fdec110e87a44427ec96e1f43cdb3a47a428a040e1608f200160bed5.res",
+      "Recursos/Otimizados/ed7695071c422088bd6ae6c43b8ae87723baa2d528ed97d56207f8c87f331a9c.res",
+      "Recursos/Otimizados/eeb6b3ec43f076ceecd50dc6a09107657b14c0fc0208cdffb771b7d9ceb4adec.res",
+      "Recursos/Otimizados/ef3f0a542a04e7ff89c94d7abf04311959f655756a34faf1fb581fa607d5181e.res",
+      "Recursos/Otimizados/f0427a94de829d31e77919e7df19b45122eb018fc0ccb5ff5b0fbcef8bd22d28.res",
+      "Recursos/Otimizados/f11e7620006acfafd7190e6201ca9358d0696c5401534458da809c130db74943.res",
+      "Recursos/Otimizados/f140da0f9236b3f8d2d15c523ae1770bead0d89d0d773968a11bbd3a05adff51.res",
+      "Recursos/Otimizados/f1892c45200229a7c6cf7c4c90e6930a2d780f8db414230f9c5e108a03aff77f.res",
+      "Recursos/Otimizados/f1f2294555145d56dacf2b71a5eed3b5b81de060d2e40d21c93e208074477387.res",
+      "Recursos/Otimizados/f2917aa2a448522986cbc0fefef4c87bcd8c011faa9f5de3a9c1aaa61e88c69d.res",
+      "Recursos/Otimizados/f2ea1b75c3a150d116651d09071ae495a2380246a8164d75055ffdb392a57d97.res",
+      "Recursos/Otimizados/f4210069e56584bf6ea3e7c6ab7b92ed1a7718cd20d3d25875525d70618c9a0c.res",
+      "Recursos/Otimizados/f463b8c1dbf1e8160134e2129b2c155e86a7897a892b9ba979e88b1ac2248d43.res",
+      "Recursos/Otimizados/f4c8fd4f9e552873aa58d05c69ddee13cd93124415bb3743a71c26919b244d23.res",
+      "Recursos/Otimizados/f4db3abc914a2a31c91501804ac586768363afe10024ccc3f80cffe18cc03482.res",
+      "Recursos/Otimizados/f54f7e8edb9cbece858d84ae92c3e77e99e7201aafe1a0c0806021c097554b5d.res",
+      "Recursos/Otimizados/f5889864481e85cd34c10464978bf31da665ea91d2cab2c626527d782be31ec4.res",
+      "Recursos/Otimizados/f5e7b7fab657b272e5f813bdac9adb152fc9d0c2baa2329a8231641de4450896.res",
+      "Recursos/Otimizados/f6458ad99a3ca6cd9cb091e91e3b3384c2dd9816b0cc504581d345b865cc7867.res",
+      "Recursos/Otimizados/f7e32dc59ef162c1109ac1abba3d3f950a788fe6d8ab401399a0a2f2958cce28.res",
+      "Recursos/Otimizados/f7eb8627779c71d9e5281edcf21472ff79507c245716dec76bddf1c00b1fdf69.res",
+      "Recursos/Otimizados/f806589b795b23156ce6db20e45be3019042068355e290860eedc753d08d8af1.res",
+      "Recursos/Otimizados/f8a302d7073b501db54518e232bac2389bc4ae83c792e16c5e890da800a50fdc.res",
+      "Recursos/Otimizados/f8d1a1c25b481f4592c5aa027cee3a5f307d5376ac3e29b7848706625170032c.res",
+      "Recursos/Otimizados/f9804ce0bedf48881c367eefff36f755f2d209eb89c674978980f7e7143dab91.res",
+      "Recursos/Otimizados/f9e0d615a3549e6cd00e73e2406ebd3efd9a891f9d3093dcad8e0e52580af44a.res",
+      "Recursos/Otimizados/f9f3c8ee2b28beb84ae351c3c6b02f2d577bbda55a5a4c05a1ef9afd1a60b1b1.res",
+      "Recursos/Otimizados/fa1d6610042cdf8157195a87d3c9f76bdb84e22efce36c4e8985a9a22183921d.res",
+      "Recursos/Otimizados/fa2e09d8a8c7f398023fa030d243d3c70f6f4fb8071092a3b1f2f82ea46bd606.res",
+      "Recursos/Otimizados/fafaf1646b8cf2a8fb8a4ecfb6ebe9a59d00628f261a4e3b1a548decf4d86d91.res",
+      "Recursos/Otimizados/fc050f79104ec390240d73bca88e0894098ae4223a4409fed6ccbaace6ad0123.res",
+      "Recursos/Otimizados/fc9e4ab97f56fcbe3b7975ecbdbfdfd9bfdf66c417fa05692f999fc9763a1ba3.res",
+      "Recursos/Otimizados/fd1ba976bf1ca603f351e01b93982b2961f49834d0f47584d551479e1d3b3086.res",
+      "Recursos/Otimizados/fd31a47b849ca82fc109ae7037804239a3e21e7b78c4a83362e568c6ef5ce2f9.res",
+      "Recursos/Otimizados/feb3948c13b6c8090a8e4408f2a15d92dd35dbc7983253d8aec3fc53cd23699e.res",
+      "Recursos/Otimizados/fef387515fbd69a2a6acb845cac3d6acb6199087d6ece01b37c6ad99216d911f.res",
+      "Recursos/Otimizados/ff5c7d939008c139d1efdfbed5ebc496c24297512fa800ccc955aac6eb8354c3.res",
+      "Recursos/Otimizados/ff762d7321b82140ad6056140e05f892decedc45194269f5eb5b2259742f0161.res",
+      "Recursos/Texturas/terra_bosque.png",
+      "RecursosOriginais/Passinhos.wav",
+      "Sistemas/Coleta/audio/caixa.wav",
+      "Sistemas/Coleta/audio/checkpoint.wav",
+      "Sistemas/Coleta/audio/coleta.wav",
+      "Sistemas/Coleta/audio/explosao.wav",
+      "Sistemas/Coleta/audio/metal.wav",
+      "Sistemas/Coleta/audio/mola.wav",
+      "Sistemas/Coleta/audio/segredo.wav",
+      "Sistemas/Coleta/audio/tnt_pavio.wav",
+      "Urso/urso.glb"
+    ]
+  }
+}

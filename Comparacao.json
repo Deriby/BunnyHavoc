@@ -1,0 +1,122 @@
+{
+  "deliveredArchiveSha256": "4503b9c832021c3678b8a42db41327043452532484f9c38288627ca918c48e25",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "baseline": {
+    "cpuPhysicsMs": 3.071,
+    "cpuProcessMs": 89.473,
+    "drawCalls": 370,
+    "fpsFromMedian": 11.3118333088244,
+    "medianMs": 88.403,
+    "name": "live_default",
+    "p95Ms": 95.87,
+    "triangles": 393335
+  },
+  "optimizedLive": [
+    {
+      "cpuPhysicsMs": 4.104,
+      "cpuProcessMs": 38.837,
+      "drawCalls": 428,
+      "fpsFromMedian": 25.1806713166973,
+      "medianMs": 39.713,
+      "name": "live_default",
+      "p95Ms": 42.933,
+      "triangles": 104109
+    },
+    {
+      "cpuPhysicsMs": 3.088,
+      "cpuProcessMs": 40.541,
+      "drawCalls": 428,
+      "fpsFromMedian": 33.4828902430858,
+      "medianMs": 29.866,
+      "name": "live_minimum",
+      "p95Ms": 32.805,
+      "triangles": 88343
+    },
+    {
+      "cpuPhysicsMs": 6.38,
+      "cpuProcessMs": 101.135,
+      "drawCalls": 370,
+      "fpsFromMedian": 10.6711058466989,
+      "medianMs": 93.711,
+      "name": "live_full_quality",
+      "p95Ms": 104.824,
+      "triangles": 393335
+    },
+    {
+      "cpuPhysicsMs": 8.517,
+      "cpuProcessMs": 92.402,
+      "drawCalls": 428,
+      "fpsFromMedian": 28.9259784212201,
+      "medianMs": 34.571,
+      "name": "live_default_repeat",
+      "p95Ms": 43.494,
+      "triangles": 104109
+    }
+  ],
+  "staticViews": [
+    {
+      "cpuPhysicsMs": 3.769,
+      "cpuProcessMs": 46.317,
+      "drawCalls": 428,
+      "fpsFromMedian": 24.103936172777,
+      "medianMs": 41.487,
+      "name": "live_default",
+      "p95Ms": 46.884,
+      "triangles": 104109
+    },
+    {
+      "cpuPhysicsMs": 4.189,
+      "cpuProcessMs": 43.804,
+      "drawCalls": 428,
+      "fpsFromMedian": 31.1516775178343,
+      "medianMs": 32.101,
+      "name": "frozen_start",
+      "p95Ms": 35.374,
+      "triangles": 104109
+    },
+    {
+      "cpuPhysicsMs": 0.173,
+      "cpuProcessMs": 218.091,
+      "drawCalls": 271,
+      "fpsFromMedian": 36.9221680697091,
+      "medianMs": 27.084,
+      "name": "view_-78",
+      "p95Ms": 37.745,
+      "triangles": 68014
+    },
+    {
+      "cpuPhysicsMs": 0.222,
+      "cpuProcessMs": 231.45,
+      "drawCalls": 243,
+      "fpsFromMedian": 32.126449706043,
+      "medianMs": 31.127,
+      "name": "view_-119",
+      "p95Ms": 34.71,
+      "triangles": 91578
+    },
+    {
+      "cpuPhysicsMs": 0.223,
+      "cpuProcessMs": 309.402,
+      "drawCalls": 171,
+      "fpsFromMedian": 35.2199485788751,
+      "medianMs": 28.393,
+      "name": "view_-238",
+      "p95Ms": 30.786,
+      "triangles": 95545
+    },
+    {
+      "cpuPhysicsMs": 0.242,
+      "cpuProcessMs": 254.258,
+      "drawCalls": 86,
+      "fpsFromMedian": 60.2736423362064,
+      "medianMs": 16.591,
+      "name": "view_-376",
+      "p95Ms": 18.087,
+      "triangles": 55613
+    }
+  ],
+  "originalNearGeometryPreserved": true,
+  "targetFps": 60,
+  "sixtyFpsAchievedThroughoutSoftwareRun": false,
+  "note": "Short sequential native llvmpipe measurements; not a measured guarantee on user hardware. Static views pause gameplay logic and are not live FPS."
+}
