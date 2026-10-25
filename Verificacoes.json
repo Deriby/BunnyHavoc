@@ -1,0 +1,981 @@
+{
+  "checks": 135,
+  "reports": {
+    "final/section_streaming": {
+      "checks": [
+        {
+          "check": "Legacy complete terrain is not loaded at startup",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Eight independent scenery sections cover the whole level",
+          "observed": 8,
+          "passed": true
+        },
+        {
+          "check": "Only a window of detailed sections is resident",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Spatial plant index restricts detailed queries",
+          "observed": [
+            178,
+            1819
+          ],
+          "passed": true
+        },
+        {
+          "check": "Background remains covered across travel and teleport",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Distant detailed resources leave the scene",
+          "observed": [
+            8,
+            6
+          ],
+          "passed": true
+        },
+        {
+          "check": "Indexed selection retains every nearby authored plant",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Revisiting preserves collected and broken state",
+          "observed": [
+            false,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "check": "Full detail loads original native foliage on demand",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Leaving full detail releases native foliage",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Compiled terrain retains every original triangle and material",
+          "observed": [
+            117356,
+            117356
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/active_sections": {
+      "checks": [
+        {
+          "check": "Only authored enemies and citizens registered",
+          "observed": 34,
+          "passed": true
+        },
+        {
+          "check": "Distant callbacks suspended in opening section",
+          "observed": 26,
+          "passed": true
+        },
+        {
+          "check": "Sleeping routine preserves pose and elapsed time",
+          "observed": "Luna",
+          "passed": true
+        },
+        {
+          "check": "Sleeping body stays registered with original collision masks",
+          "observed": [
+            16,
+            30
+          ],
+          "passed": true
+        },
+        {
+          "check": "Nearby bear remains active",
+          "observed": -36.0,
+          "passed": true
+        },
+        {
+          "check": "Approaching section wakes actor before contact",
+          "observed": "Luna",
+          "passed": true
+        },
+        {
+          "check": "Returning to first section sleeps distant routine again",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Dialogue is never suspended",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Section scheduling remains active beyond the former pilot",
+          "observed": 22,
+          "passed": true
+        },
+        {
+          "check": "Pilot can be disabled without changing scene objects",
+          "observed": 0,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/playthrough": {
+      "checks": [
+        {
+          "check": "Continuous keyboard run reaches the ending with all enemy AI and damage active",
+          "observed": {
+            "deaths": 1,
+            "frames": 4389,
+            "lastPosition": "(-0.08707, 8.900832, -387.0709)",
+            "minimumZ": -386.900604248047
+          },
+          "passed": true
+        },
+        {
+          "check": "Arena is won with real input, AI and damage active",
+          "observed": {
+            "kills": 10,
+            "state": "concluida"
+          },
+          "passed": true
+        },
+        {
+          "check": "Camera keeps the player in view during traversal",
+          "observed": {
+            "largestFrameStep": 15.6338920593262,
+            "outsideFrames": 0
+          },
+          "passed": true
+        },
+        {
+          "check": "Checkpoints activate along the continuous route",
+          "observed": [
+            -54.5,
+            -98.5,
+            -142.5,
+            -186.5,
+            -230.5,
+            -274.5,
+            -318.5
+          ],
+          "passed": true
+        },
+        {
+          "check": "Run collects carrots and defeats enemies through real controls",
+          "observed": {
+            "carrots": 156,
+            "defeated": 17
+          },
+          "passed": true
+        },
+        {
+          "check": "Route either survives or respawns at checkpoint with hearts and collected carrots",
+          "observed": [
+            {
+              "carrotsKept": true,
+              "hearts": 3,
+              "positionError": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "check": "Ending plays continuously and produces saved results",
+          "observed": {
+            "finished": true,
+            "phases": [
+              "intro",
+              "riftWarning",
+              "teleport",
+              "teleportReact",
+              "taunt",
+              "cageFly",
+              "cageDrop",
+              "trappedDialogue",
+              "windup",
+              "knockdown",
+              "aftermath",
+              "liftApproach",
+              "throwPrep",
+              "throwLaunch",
+              "airborne",
+              "catch",
+              "escape",
+              "forestReveal"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "scope": "Continuous keyboard pilot; original AI, damage, physics and camera enabled; no teleport or invulnerability during route.",
+      "status": "passed",
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/collisions": {
+      "checks": [
+        {
+          "check": "Walking into a live crate stops at its side",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Destroyed crate no longer blocks walking",
+          "observed": -2.37736916542053,
+          "passed": true
+        },
+        {
+          "check": "Reset crate restores solid collision",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Solid crate remains breakable with the real combo",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Besouro",
+          "observed": 0.851371765136719,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Besouro",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Besouro",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Besouro stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Besouro damages it and rebounds",
+          "observed": [
+            1,
+            0,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Besouro releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Lagarto",
+          "observed": 0.850856125354767,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Lagarto",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Lagarto",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Lagarto stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Lagarto damages it and rebounds",
+          "observed": [
+            2,
+            1,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Lagarto releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Urso",
+          "observed": 1.20094275474548,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Urso",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Urso",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Urso stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Urso damages it and rebounds",
+          "observed": [
+            3,
+            2,
+            3.84031319618225,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Urso releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "NPC body blocks Bunnyck without harming him",
+          "observed": [
+            0.88234931230545,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Every authored NPC receives one reusable capsule",
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "check": "NPC routine respects a stationary Bunnyck",
+          "observed": 0.879778563976288,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "status": "passed",
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/damage_hop": {
+      "checks": [
+        {
+          "check": "Nonlethal damage costs one heart and starts backward/upward motion",
+          "observed": [
+            2,
+            "(0.0, 3.8, 4.5)"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Held movement and jump cannot cancel or amplify the small damage hop",
+          "observed": [
+            "(0.0, 0.266967, 0.750398)",
+            0.270300477743149
+          ],
+          "passed": true
+        },
+        {
+          "check": "Damage pose keeps Bunnyck facing the attacker while recoiling",
+          "observed": [
+            "hurt",
+            "(-0.0, -0.205281, -0.966096)"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Recoil cannot queue an attack during reaction",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Damage hop does not consume or play the regular jump samples",
+          "observed": [
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Invulnerability prevents repeat damage and repeated launches",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Small hop lands and releases control",
+          "observed": [
+            0.000838164996821433,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Normal movement resumes immediately after reaction",
+          "observed": 0.80645751953125,
+          "passed": true
+        },
+        {
+          "check": "Side hit recoils away from its actual source",
+          "observed": "(90.60038, 0.266967, 0.0)",
+          "passed": true
+        },
+        {
+          "check": "Overlapping source still produces a finite nonzero recoil",
+          "observed": "(0.000001, 3.8, 4.5)",
+          "passed": true
+        },
+        {
+          "check": "Damage without a source uses a safe facing fallback",
+          "observed": "(0.000001, 3.8, 4.5)",
+          "passed": true
+        },
+        {
+          "check": "Recoil respects wall collision",
+          "observed": 0.449065923690796,
+          "passed": true
+        },
+        {
+          "check": "Airborne damage remains a finite physical hop",
+          "observed": "(90.0, 2.15, 0.225)",
+          "passed": true
+        },
+        {
+          "check": "Lethal damage keeps the existing death sequence",
+          "observed": [
+            true,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Pits remain lethal instead of starting a damage hop",
+          "observed": "pit",
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "status": "passed",
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/render_leve/native": {
+      "checks": [
+        {
+          "check": "Default selects the documented low-cost profile",
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "check": "Authored forest stays unloaded during gameplay",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "All authored plant variants and details are retained",
+          "observed": [
+            1819,
+            21
+          ],
+          "passed": true
+        },
+        {
+          "check": "Player keeps all original pivots and named meshes",
+          "observed": 28,
+          "passed": true
+        },
+        {
+          "check": "Instanced cuboids match original player world poses",
+          "observed": 28,
+          "passed": true
+        },
+        {
+          "check": "Player movement and animated render remain synchronized",
+          "observed": 0.885404527187347,
+          "passed": true
+        },
+        {
+          "check": "Bear render preserves its individual animated pieces",
+          "observed": 53,
+          "passed": true
+        },
+        {
+          "check": "Damage hop remains animated through the render batch",
+          "observed": 0.15,
+          "passed": true
+        },
+        {
+          "check": "Full-detail mode restores the previous native forest",
+          "observed": 2.0,
+          "passed": true
+        },
+        {
+          "check": "Leve retains its larger detailed radius",
+          "observed": 24.0,
+          "passed": true
+        },
+        {
+          "check": "Minimum keeps nearby 3D detail without fog",
+          "observed": 12.0,
+          "passed": true
+        },
+        {
+          "check": "Graphics profiles leave physical collision masks intact",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Every plant retains valid geometry and a distant representation",
+          "observed": 1819,
+          "passed": true
+        },
+        {
+          "check": "Native renderer draws the distant forest",
+          "observed": 850,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": true
+    },
+    "final/arena": {
+      "checks": [
+        {
+          "check": "Reusable encounter configured as 3 + 3 + 4 forest humanoids",
+          "observed": "[3, 3, 4]",
+          "passed": true
+        },
+        {
+          "check": "Sentinel and alarm explain the ambush before the first wave",
+          "observed": "Patrulha de Bibibunn: ninguém segue o coelho preto! Fechem a passagem!",
+          "passed": true
+        },
+        {
+          "check": "Exit starts physically blocked and entrance is open",
+          "observed": [
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Clearing expands original corridor to over 20 metres",
+          "observed": 11.0,
+          "passed": true
+        },
+        {
+          "check": "New circular floor supports player and enemies, including filled short gap",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Circular ground has visible clockwise front faces from above",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Dirt geometry uses texture and vertex colours in prebaked world",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Walking into clearing starts cinematic and locks movement",
+          "observed": "cena",
+          "passed": true
+        },
+        {
+          "check": "Cinematic does not buffer an attack",
+          "observed": {
+            "activeHit": false,
+            "age": 0.0,
+            "grace": 0.0,
+            "heading": -3.14159250259399,
+            "hitStop": 0.0,
+            "queued": 0,
+            "reach": 0.0,
+            "reachLimit": 0.0,
+            "serial": 0,
+            "step": 0,
+            "travelled": 0.0
+          },
+          "passed": true
+        },
+        {
+          "check": "Skip releases controls and starts exactly three enemies",
+          "observed": [
+            "combate",
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Arena camera keeps player and perimeter readable",
+          "observed": "(0.006249, 21.994, -98.00621)",
+          "passed": true
+        },
+        {
+          "check": "Both gates physically close for battle",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Wave entrances finish with solid grounded enemies",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Existing spin/punch combo damages and defeats humanoid",
+          "observed": [
+            0,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death counts once even when another hit reaches the corpse",
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "check": "Second wave waits for first and never releases the exit early",
+          "observed": [
+            2,
+            3,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Final wave has four enemies, total target remains ten",
+          "observed": [
+            3,
+            4,
+            6
+          ],
+          "passed": true
+        },
+        {
+          "check": "Humanoid attacks still hurt and recoil the player",
+          "observed": [
+            2,
+            0.17
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death aborts encounter, clears enemies and restores checkpoint control",
+          "observed": [
+            "espera",
+            0,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death keeps earned carrots and resets gate state safely",
+          "observed": 36,
+          "passed": true
+        },
+        {
+          "check": "Retry skips already-seen cinematic and resets kill target",
+          "observed": [
+            "combate",
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Exactly ten defeats unlock both gates and leave no enemies",
+          "observed": [
+            10,
+            "concluida"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Retry does not farm repeated slot rewards",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Victory returns original camera controller",
+          "observed": [
+            false,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "check": "Completed arena remains open after a later death",
+          "observed": "concluida",
+          "passed": true
+        },
+        {
+          "check": "R resets waves, rewards, cinematic and barricade",
+          "observed": [
+            "espera",
+            0
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/cinema": {
+      "checks": [
+        {
+          "check": "Cinematic lights and interface stay off during gameplay",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Cinematic sound light and UI activate together",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Dialogue uses distinct establishing reaction and threat shots",
+          "observed": [
+            "reencontro_aberto",
+            "confidencia_bunnyldu",
+            "resposta_bunnyck",
+            "pressagio",
+            "entrada_bibibunn",
+            "ameaca_bibibunn",
+            "cageFly",
+            "cageDrop",
+            "irmao_atras_das_grades",
+            "promessa_bunnyck",
+            "duelo_antecipacao",
+            "knockdown",
+            "determinacao_bunnyck",
+            "liftApproach",
+            "throwPrep",
+            "throwLaunch",
+            "airborne",
+            "catch",
+            "escape",
+            "despedida_bosque"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Speaking faces remain inside cinematic safe frame",
+          "observed": [],
+          "passed": true
+        },
+        {
+          "check": "Rabbit ears remain clear of the top matte",
+          "observed": [],
+          "passed": true
+        },
+        {
+          "check": "Seeking does not accumulate camera or acting offsets",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Enter reveals subtitle without jumping the scene",
+          "observed": "Que loucura! Então a gente vai sair daqui agora mesmo!",
+          "passed": true
+        },
+        {
+          "check": "Next Enter advances and resynchronizes both audio streams",
+          "observed": 18.95,
+          "passed": true
+        },
+        {
+          "check": "Throw apex briefly slows animation and synchronized sound",
+          "observed": [
+            0.0745454545454578,
+            0.745454549789429,
+            0.745454549789429
+          ],
+          "passed": true
+        },
+        {
+          "check": "R fully restores gameplay lighting sky music and input",
+          "observed": [
+            0.5,
+            1.5,
+            -14.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Cinematic ending still reaches results and restores scene settings",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "F6 preview starts the cinematic without playing the entire phase",
+          "observed": 0.0833333333333333,
+          "passed": true
+        },
+        {
+          "check": "R in the preview replays the scene with one active soundtrack",
+          "observed": 0.0833333333333333,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "native": false,
+      "status": "passed",
+      "fullArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "patch/section_streaming/native": {
+      "checks": [
+        {
+          "check": "Legacy complete terrain is not loaded at startup",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Eight independent scenery sections cover the whole level",
+          "observed": 8,
+          "passed": true
+        },
+        {
+          "check": "Only a window of detailed sections is resident",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Spatial plant index restricts detailed queries",
+          "observed": [
+            178,
+            1819
+          ],
+          "passed": true
+        },
+        {
+          "check": "Background remains covered across travel and teleport",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Distant detailed resources leave the scene",
+          "observed": [
+            8,
+            6
+          ],
+          "passed": true
+        },
+        {
+          "check": "Indexed selection retains every nearby authored plant",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Revisiting preserves collected and broken state",
+          "observed": [
+            false,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "check": "Full detail loads original native foliage on demand",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Leaving full detail releases native foliage",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Compiled terrain retains every original triangle and material",
+          "observed": [
+            117356,
+            117356
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "patchSha256": "0c4874d4f45e49f1eb637887c34749f4adaa74cddebffb9b259a4ff25fd1b73b",
+      "fullArchiveSha256": "dd19025216d927e5cb8b34f494fdf7d11563b71faf51405a33a3675884e2cf43",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": true
+    }
+  },
+  "patchOverlayMatchesFull": true,
+  "onlyExistingProjectFilesChanged": [
+    "Fase1Trecho.tscn",
+    "README.md",
+    "Sistemas/Visual/fontes_cenario.gd",
+    "Sistemas/Visual/natureza_instanciada.gd",
+    "Sistemas/Visual/trechos_ativos.gd"
+  ],
+  "unchangedExistingProjectFiles": 989,
+  "originalGlbsAudioStaticSourcePreserved": true,
+  "terrainFaceAndMaterialSignatures": 117356,
+  "fullSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+  "patchSha256": "0c4874d4f45e49f1eb637887c34749f4adaa74cddebffb9b259a4ff25fd1b73b"
+}
