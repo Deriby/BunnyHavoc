@@ -1,0 +1,1394 @@
+{
+  "checks": 123,
+  "reports": {
+    "final/visibility_html/native": {
+      "checks": [
+        {
+          "check": "All authored spike hazards are present",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Visible vegetation retains native 3D volume beyond the close radius",
+          "observed": [
+            17,
+            66
+          ],
+          "passed": true
+        },
+        {
+          "check": "Intermediate models retain imported vertex colours",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Contact shading uses one visible batch without shadow maps",
+          "observed": 5,
+          "passed": true
+        },
+        {
+          "check": "Uncollected carrots stay in the render batches",
+          "observed": 50,
+          "passed": true
+        },
+        {
+          "check": "Hazard is readable before touching it: Espinhos_0",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Hazard is readable before touching it: Obstaculo_spike_1",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Default profile retains at least 97 percent of full-detail hazard footprint",
+          "observed": [
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 901,
+              "variant": "normal",
+              "z": -34.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 901,
+              "variant": "sem_lod",
+              "z": -34.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 1438,
+              "variant": "normal",
+              "z": -42.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 1438,
+              "variant": "sem_lod",
+              "z": -42.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 2754,
+              "variant": "normal",
+              "z": -49.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 2754,
+              "variant": "sem_lod",
+              "z": -49.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 3917,
+              "variant": "normal",
+              "z": -52.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 3917,
+              "variant": "sem_lod",
+              "z": -52.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 739,
+              "variant": "normal",
+              "z": -179.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 739,
+              "variant": "sem_lod",
+              "z": -179.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 1464,
+              "variant": "normal",
+              "z": -187.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 1464,
+              "variant": "sem_lod",
+              "z": -187.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 3559,
+              "variant": "normal",
+              "z": -194.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 3559,
+              "variant": "sem_lod",
+              "z": -194.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 5629,
+              "variant": "normal",
+              "z": -197.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 5629,
+              "variant": "sem_lod",
+              "z": -197.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "check": "No contact shadow is drawn over an unsupported pit",
+          "observed": false,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "note": "Paused masks verify visible hazard pixels; these images are not FPS measurements.",
+      "samples": [
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 901,
+          "variant": "normal",
+          "z": -34.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 901,
+          "variant": "sem_lod",
+          "z": -34.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 1438,
+          "variant": "normal",
+          "z": -42.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 1438,
+          "variant": "sem_lod",
+          "z": -42.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 2754,
+          "variant": "normal",
+          "z": -49.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 2754,
+          "variant": "sem_lod",
+          "z": -49.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 3917,
+          "variant": "normal",
+          "z": -52.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 3917,
+          "variant": "sem_lod",
+          "z": -52.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 739,
+          "variant": "normal",
+          "z": -179.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 739,
+          "variant": "sem_lod",
+          "z": -179.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 1464,
+          "variant": "normal",
+          "z": -187.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 1464,
+          "variant": "sem_lod",
+          "z": -187.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 3559,
+          "variant": "normal",
+          "z": -194.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 3559,
+          "variant": "sem_lod",
+          "z": -194.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 5629,
+          "variant": "normal",
+          "z": -197.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 5629,
+          "variant": "sem_lod",
+          "z": -197.0
+        }
+      ],
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": true
+    },
+    "final/render_leve/native": {
+      "checks": [
+        {
+          "check": "Default selects the documented low-cost profile",
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "check": "Authored forest stays unloaded during gameplay",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "All authored plant variants and details are retained",
+          "observed": [
+            1819,
+            21
+          ],
+          "passed": true
+        },
+        {
+          "check": "Player keeps all original pivots and named meshes",
+          "observed": 28,
+          "passed": true
+        },
+        {
+          "check": "Instanced cuboids match original player world poses",
+          "observed": 28,
+          "passed": true
+        },
+        {
+          "check": "Player movement and animated render remain synchronized",
+          "observed": 0.885404527187347,
+          "passed": true
+        },
+        {
+          "check": "Bear render preserves its individual animated pieces",
+          "observed": 53,
+          "passed": true
+        },
+        {
+          "check": "Damage hop remains animated through the render batch",
+          "observed": 0.15,
+          "passed": true
+        },
+        {
+          "check": "Full-detail mode restores the previous native forest",
+          "observed": 2.0,
+          "passed": true
+        },
+        {
+          "check": "Leve retains its larger detailed radius",
+          "observed": 28.0,
+          "passed": true
+        },
+        {
+          "check": "Minimum keeps nearby 3D detail without fog",
+          "observed": 20.0,
+          "passed": true
+        },
+        {
+          "check": "Graphics profiles leave physical collision masks intact",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Every plant retains valid geometry and a distant representation",
+          "observed": 1819,
+          "passed": true
+        },
+        {
+          "check": "Native renderer draws the distant forest",
+          "observed": [
+            28,
+            66
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": true
+    },
+    "final/camera_html/native": {
+      "checks": [
+        {
+          "check": "Gameplay frame points down instead of opening the horizon",
+          "observed": [
+            {
+              "heroFootY": 0.798516732675058,
+              "heroHeadY": 0.564300113254123,
+              "topRayY": -0.121869392693043,
+              "z": 8.0
+            },
+            {
+              "heroFootY": 0.801523938591098,
+              "heroHeadY": 0.631494074691961,
+              "topRayY": -0.107792772352695,
+              "z": -41.0
+            },
+            {
+              "heroFootY": 0.810356140136719,
+              "heroHeadY": 0.622648733633536,
+              "topRayY": -0.11097115278244,
+              "z": -78.0
+            },
+            {
+              "heroFootY": 0.787552021167896,
+              "heroHeadY": 0.614874568986304,
+              "topRayY": -0.109522260725498,
+              "z": -129.0
+            },
+            {
+              "heroFootY": 0.812125594527633,
+              "heroHeadY": 0.608855965696735,
+              "topRayY": -0.121818780899048,
+              "z": -238.0
+            },
+            {
+              "heroFootY": 0.797860698935426,
+              "heroHeadY": 0.58875463038315,
+              "topRayY": -0.127985209226608,
+              "z": -376.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "check": "Player remains fully visible at different heights",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "First big-jump landing remains in frame",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Ground material uses painted color without granular texture",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Trail palette varies smoothly without speckled noise",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Independent image resolution remains enabled",
+          "observed": 2,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "note": "Frozen gameplay framing for visual verification, not FPS measurements.",
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": true
+    },
+    "final/collisions": {
+      "checks": [
+        {
+          "check": "Walking into a live crate stops at its side",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Destroyed crate no longer blocks walking",
+          "observed": -2.37736916542053,
+          "passed": true
+        },
+        {
+          "check": "Reset crate restores solid collision",
+          "observed": 0.986219882965088,
+          "passed": true
+        },
+        {
+          "check": "Solid crate remains breakable with the real combo",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Besouro",
+          "observed": 0.851371765136719,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Besouro",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Besouro",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Besouro stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Besouro damages it and rebounds",
+          "observed": [
+            1,
+            0,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Besouro releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Lagarto",
+          "observed": 0.850856125354767,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Lagarto",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Lagarto",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Lagarto stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Lagarto damages it and rebounds",
+          "observed": [
+            2,
+            1,
+            1.14031219482422,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Lagarto releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Bunnyck cannot walk through Urso",
+          "observed": 1.20094275474548,
+          "passed": true
+        },
+        {
+          "check": "Solid recovery contact remains harmless for Urso",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Real solid lateral contact still causes damage for Urso",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Moving Urso stops against Bunnyck",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Landing on solid Urso damages it and rebounds",
+          "observed": [
+            3,
+            2,
+            3.84031319618225,
+            9.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Defeated Urso releases collision",
+          "observed": -4.06296586990356,
+          "passed": true
+        },
+        {
+          "check": "Enemy restart restores solid body",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "NPC body blocks Bunnyck without harming him",
+          "observed": [
+            0.88234931230545,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Every authored NPC receives one reusable capsule",
+          "observed": 14,
+          "passed": true
+        },
+        {
+          "check": "NPC routine respects a stationary Bunnyck",
+          "observed": 0.879778563976288,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "status": "passed",
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/arena": {
+      "checks": [
+        {
+          "check": "Reusable encounter configured as 3 + 3 + 4 forest humanoids",
+          "observed": "[3, 3, 4]",
+          "passed": true
+        },
+        {
+          "check": "Sentinel and alarm explain the ambush before the first wave",
+          "observed": "Patrulha de Bibibunn: ninguém segue o coelho preto! Fechem a passagem!",
+          "passed": true
+        },
+        {
+          "check": "Exit starts physically blocked and entrance is open",
+          "observed": [
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Clearing expands original corridor to over 20 metres",
+          "observed": 11.0,
+          "passed": true
+        },
+        {
+          "check": "New circular floor supports player and enemies, including filled short gap",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Circular ground has visible clockwise front faces from above",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Prebaked ground uses the varied HTML vertex palette without dirt texture",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Walking into clearing starts cinematic and locks movement",
+          "observed": "cena",
+          "passed": true
+        },
+        {
+          "check": "Cinematic does not buffer an attack",
+          "observed": {
+            "activeHit": false,
+            "age": 0.0,
+            "grace": 0.0,
+            "heading": -3.14159250259399,
+            "hitStop": 0.0,
+            "queued": 0,
+            "reach": 0.0,
+            "reachLimit": 0.0,
+            "serial": 0,
+            "step": 0,
+            "travelled": 0.0
+          },
+          "passed": true
+        },
+        {
+          "check": "Skip releases controls and starts exactly three enemies",
+          "observed": [
+            "combate",
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Arena camera keeps player and perimeter readable",
+          "observed": "(0.006249, 21.994, -98.00621)",
+          "passed": true
+        },
+        {
+          "check": "Both gates physically close for battle",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Wave entrances finish with solid grounded enemies",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "check": "Existing spin/punch combo damages and defeats humanoid",
+          "observed": [
+            0,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death counts once even when another hit reaches the corpse",
+          "observed": 1,
+          "passed": true
+        },
+        {
+          "check": "Second wave waits for first and never releases the exit early",
+          "observed": [
+            2,
+            3,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Final wave has four enemies, total target remains ten",
+          "observed": [
+            3,
+            4,
+            6
+          ],
+          "passed": true
+        },
+        {
+          "check": "Humanoid attacks still hurt and recoil the player",
+          "observed": [
+            2,
+            0.17
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death aborts encounter, clears enemies and restores checkpoint control",
+          "observed": [
+            "espera",
+            0,
+            3
+          ],
+          "passed": true
+        },
+        {
+          "check": "Death keeps earned carrots and resets gate state safely",
+          "observed": 36,
+          "passed": true
+        },
+        {
+          "check": "Retry skips already-seen cinematic and resets kill target",
+          "observed": [
+            "combate",
+            1,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Exactly ten defeats unlock both gates and leave no enemies",
+          "observed": [
+            10,
+            "concluida"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Retry does not farm repeated slot rewards",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Victory returns original camera controller",
+          "observed": [
+            false,
+            true
+          ],
+          "passed": true
+        },
+        {
+          "check": "Completed arena remains open after a later death",
+          "observed": "concluida",
+          "passed": true
+        },
+        {
+          "check": "R resets waves, rewards, cinematic and barricade",
+          "observed": [
+            "espera",
+            0
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/cinema": {
+      "checks": [
+        {
+          "check": "Cinematic lights and interface stay off during gameplay",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "check": "Cinematic sound light and UI activate together",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Dialogue uses distinct establishing reaction and threat shots",
+          "observed": [
+            "reencontro_aberto",
+            "confidencia_bunnyldu",
+            "resposta_bunnyck",
+            "pressagio",
+            "entrada_bibibunn",
+            "ameaca_bibibunn",
+            "cageFly",
+            "cageDrop",
+            "irmao_atras_das_grades",
+            "promessa_bunnyck",
+            "duelo_antecipacao",
+            "knockdown",
+            "determinacao_bunnyck",
+            "liftApproach",
+            "throwPrep",
+            "throwLaunch",
+            "airborne",
+            "catch",
+            "escape",
+            "despedida_bosque"
+          ],
+          "passed": true
+        },
+        {
+          "check": "Speaking faces remain inside cinematic safe frame",
+          "observed": [],
+          "passed": true
+        },
+        {
+          "check": "Rabbit ears remain clear of the top matte",
+          "observed": [],
+          "passed": true
+        },
+        {
+          "check": "Seeking does not accumulate camera or acting offsets",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "check": "Enter reveals subtitle without jumping the scene",
+          "observed": "Que loucura! Então a gente vai sair daqui agora mesmo!",
+          "passed": true
+        },
+        {
+          "check": "Next Enter advances and resynchronizes both audio streams",
+          "observed": 18.95,
+          "passed": true
+        },
+        {
+          "check": "Throw apex briefly slows animation and synchronized sound",
+          "observed": [
+            0.0745454545454578,
+            0.745454549789429,
+            0.745454549789429
+          ],
+          "passed": true
+        },
+        {
+          "check": "R fully restores gameplay lighting sky music and input",
+          "observed": [
+            0.5,
+            1.5,
+            -14.0
+          ],
+          "passed": true
+        },
+        {
+          "check": "Cinematic ending still reaches results and restores scene settings",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "F6 preview starts the cinematic without playing the entire phase",
+          "observed": 0.0833333333333333,
+          "passed": true
+        },
+        {
+          "check": "R in the preview replays the scene with one active soundtrack",
+          "observed": 0.0833333333333333,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "native": false,
+      "status": "passed",
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/playthrough": {
+      "checks": [
+        {
+          "check": "Continuous keyboard run reaches the ending with all enemy AI and damage active",
+          "observed": {
+            "deaths": 1,
+            "frames": 4389,
+            "lastPosition": "(-0.08707, 8.900832, -387.0709)",
+            "minimumZ": -386.900604248047
+          },
+          "passed": true
+        },
+        {
+          "check": "Arena is won with real input, AI and damage active",
+          "observed": {
+            "kills": 10,
+            "state": "concluida"
+          },
+          "passed": true
+        },
+        {
+          "check": "Camera keeps the player in view during traversal",
+          "observed": {
+            "largestFrameStep": 15.9995899200439,
+            "outsideFrames": 0
+          },
+          "passed": true
+        },
+        {
+          "check": "Checkpoints activate along the continuous route",
+          "observed": [
+            -54.5,
+            -98.5,
+            -142.5,
+            -186.5,
+            -230.5,
+            -274.5,
+            -318.5
+          ],
+          "passed": true
+        },
+        {
+          "check": "Run collects carrots and defeats enemies through real controls",
+          "observed": {
+            "carrots": 156,
+            "defeated": 17
+          },
+          "passed": true
+        },
+        {
+          "check": "Route either survives or respawns at checkpoint with hearts and collected carrots",
+          "observed": [
+            {
+              "carrotsKept": true,
+              "hearts": 3,
+              "positionError": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "check": "Ending plays continuously and produces saved results",
+          "observed": {
+            "finished": true,
+            "phases": [
+              "intro",
+              "riftWarning",
+              "teleport",
+              "teleportReact",
+              "taunt",
+              "cageFly",
+              "cageDrop",
+              "trappedDialogue",
+              "windup",
+              "knockdown",
+              "aftermath",
+              "liftApproach",
+              "throwPrep",
+              "throwLaunch",
+              "airborne",
+              "catch",
+              "escape",
+              "forestReveal"
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "godot": "4.7.2-stable (official)",
+      "scope": "Continuous keyboard pilot; original AI, damage, physics and camera enabled; no teleport or invulnerability during route.",
+      "status": "passed",
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "final/section_streaming": {
+      "checks": [
+        {
+          "check": "Legacy complete terrain is not loaded at startup",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Eight independent scenery sections cover the whole level",
+          "observed": 8,
+          "passed": true
+        },
+        {
+          "check": "Only a window of detailed sections is resident",
+          "observed": 3,
+          "passed": true
+        },
+        {
+          "check": "Spatial plant index restricts detailed queries",
+          "observed": [
+            321,
+            1819
+          ],
+          "passed": true
+        },
+        {
+          "check": "Background remains covered across travel and teleport",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Distant detailed resources leave the scene",
+          "observed": [
+            8,
+            5
+          ],
+          "passed": true
+        },
+        {
+          "check": "Indexed selection retains every nearby authored plant",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Revisiting preserves collected and broken state",
+          "observed": [
+            false,
+            false
+          ],
+          "passed": true
+        },
+        {
+          "check": "Full detail loads original native foliage on demand",
+          "observed": 60,
+          "passed": true
+        },
+        {
+          "check": "Leaving full detail releases native foliage",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Compiled terrain retains every original triangle",
+          "observed": [
+            117356,
+            117356
+          ],
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "fullArchiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": false
+    },
+    "patch/visibility_html/native": {
+      "checks": [
+        {
+          "check": "All authored spike hazards are present",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Visible vegetation retains native 3D volume beyond the close radius",
+          "observed": [
+            17,
+            66
+          ],
+          "passed": true
+        },
+        {
+          "check": "Intermediate models retain imported vertex colours",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "check": "Contact shading uses one visible batch without shadow maps",
+          "observed": 5,
+          "passed": true
+        },
+        {
+          "check": "Uncollected carrots stay in the render batches",
+          "observed": 50,
+          "passed": true
+        },
+        {
+          "check": "Hazard is readable before touching it: Espinhos_0",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Hazard is readable before touching it: Obstaculo_spike_1",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "check": "Default profile retains at least 97 percent of full-detail hazard footprint",
+          "observed": [
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 901,
+              "variant": "normal",
+              "z": -34.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 901,
+              "variant": "sem_lod",
+              "z": -34.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 1438,
+              "variant": "normal",
+              "z": -42.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 1438,
+              "variant": "sem_lod",
+              "z": -42.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 2754,
+              "variant": "normal",
+              "z": -49.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 2754,
+              "variant": "sem_lod",
+              "z": -49.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 3917,
+              "variant": "normal",
+              "z": -52.0
+            },
+            {
+              "hazard": "Espinhos_0",
+              "spikePixels": 3917,
+              "variant": "sem_lod",
+              "z": -52.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 739,
+              "variant": "normal",
+              "z": -179.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 739,
+              "variant": "sem_lod",
+              "z": -179.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 1464,
+              "variant": "normal",
+              "z": -187.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 1464,
+              "variant": "sem_lod",
+              "z": -187.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 3559,
+              "variant": "normal",
+              "z": -194.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 3559,
+              "variant": "sem_lod",
+              "z": -194.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 5629,
+              "variant": "normal",
+              "z": -197.0
+            },
+            {
+              "hazard": "Obstaculo_spike_1",
+              "spikePixels": 5629,
+              "variant": "sem_lod",
+              "z": -197.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "check": "No contact shadow is drawn over an unsupported pit",
+          "observed": false,
+          "passed": true
+        }
+      ],
+      "failures": 0,
+      "note": "Paused masks verify visible hazard pixels; these images are not FPS measurements.",
+      "samples": [
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 901,
+          "variant": "normal",
+          "z": -34.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 901,
+          "variant": "sem_lod",
+          "z": -34.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 1438,
+          "variant": "normal",
+          "z": -42.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 1438,
+          "variant": "sem_lod",
+          "z": -42.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 2754,
+          "variant": "normal",
+          "z": -49.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 2754,
+          "variant": "sem_lod",
+          "z": -49.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 3917,
+          "variant": "normal",
+          "z": -52.0
+        },
+        {
+          "hazard": "Espinhos_0",
+          "spikePixels": 3917,
+          "variant": "sem_lod",
+          "z": -52.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 739,
+          "variant": "normal",
+          "z": -179.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 739,
+          "variant": "sem_lod",
+          "z": -179.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 1464,
+          "variant": "normal",
+          "z": -187.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 1464,
+          "variant": "sem_lod",
+          "z": -187.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 3559,
+          "variant": "normal",
+          "z": -194.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 3559,
+          "variant": "sem_lod",
+          "z": -194.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 5629,
+          "variant": "normal",
+          "z": -197.0
+        },
+        {
+          "hazard": "Obstaculo_spike_1",
+          "spikePixels": 5629,
+          "variant": "sem_lod",
+          "z": -197.0
+        }
+      ],
+      "patchSha256": "d727877b8ca93a4efe3bb174514cba6d506257f1ba1c6f0b521732a8a5e42ee8",
+      "fullArchiveSha256": "58e151e3670fd93ba1eb888a77951218e1e5b8ed6935cd83936df119c901a11a",
+      "standaloneProjectVerified": true,
+      "allFileHashesVerified": true,
+      "nativeRendering": true
+    }
+  },
+  "base020OverlayVerified": true,
+  "originalAssetsPreserved": 412,
+  "fullSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+  "patchSha256": "d727877b8ca93a4efe3bb174514cba6d506257f1ba1c6f0b521732a8a5e42ee8",
+  "nativePerformance": {
+    "fullSimulation": true,
+    "internalLines": 360,
+    "mode": 1,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "samples": [
+      {
+        "averageFps": 39.1385927420465,
+        "cpuPhysicsMs": 6.979,
+        "cpuProcessMs": 33.583,
+        "drawCalls": 62,
+        "engineFps": 40.0,
+        "frames": 118,
+        "hearts": 3,
+        "kills": 0,
+        "maxMs": 64.219,
+        "medianFps": 41.4886113761772,
+        "medianMs": 24.103,
+        "name": "parado",
+        "p95Ms": 38.257,
+        "p99Ms": 44.393,
+        "physicsActive": true,
+        "playerMoved": 0.0,
+        "seconds": 3.014927,
+        "triangles": 32482
+      },
+      {
+        "averageFps": 31.1197939178092,
+        "cpuPhysicsMs": 5.777,
+        "cpuProcessMs": 251.2,
+        "drawCalls": 106,
+        "engineFps": 27.0,
+        "frames": 63,
+        "hearts": 3,
+        "kills": 0,
+        "maxMs": 253.725,
+        "medianFps": 36.1323890735655,
+        "medianMs": 27.676,
+        "name": "andando",
+        "p95Ms": 38.888,
+        "p99Ms": 253.725,
+        "physicsActive": true,
+        "playerMoved": 19.7416534423828,
+        "seconds": 2.024435,
+        "triangles": 41108
+      },
+      {
+        "averageFps": 28.7404070632689,
+        "cpuPhysicsMs": 10.573,
+        "cpuProcessMs": 38.555,
+        "drawCalls": 171,
+        "engineFps": 29.0,
+        "frames": 87,
+        "hearts": 3,
+        "kills": 2,
+        "maxMs": 206.131,
+        "medianFps": 31.4673211869474,
+        "medianMs": 31.779,
+        "name": "combate",
+        "p95Ms": 43.738,
+        "p99Ms": 206.131,
+        "physicsActive": true,
+        "playerMoved": 5.83883619308472,
+        "seconds": 3.027097,
+        "triangles": 47812
+      }
+    ],
+    "window": [
+      1152,
+      648
+    ],
+    "archive": "Bunny_Havoc_Godot_4_7_Visual_3D.zip",
+    "archiveSha256": "2badf9e2287558c3249b7aac1dae7c10349417e2406c0cc7358596a8b0df2d49",
+    "uncappedWallClockFrames": true,
+    "fixedFpsUsed": false,
+    "notes": "Software llvmpipe, active gameplay. Short scenarios; averages do not guarantee stable 60 FPS throughout the level."
+  },
+  "performanceTradeoff": "Higher native 3D detail costs render time; previous 020 software samples were faster. No stable 30/60 FPS claim."
+}
