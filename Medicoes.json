@@ -1,0 +1,102 @@
+{
+  "checks": [
+    {
+      "check": "Default increases image to 360p while keeping minimum detail",
+      "observed": 360,
+      "passed": true
+    },
+    {
+      "check": "All resolutions keep live gameplay and minimum geometry",
+      "observed": 5,
+      "passed": true
+    },
+    {
+      "check": "F7 increases resolution without changing detail level",
+      "observed": 540,
+      "passed": true
+    },
+    {
+      "check": "F7 cycles back through lower resolutions without changing detail level",
+      "observed": 360,
+      "passed": true
+    },
+    {
+      "check": "Resolution preference persists separately from progress",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check": "Full-detail selection no longer forces native resolution",
+      "observed": 360,
+      "passed": true
+    },
+    {
+      "check": "Returning to low detail retains chosen sharpness",
+      "observed": 360,
+      "passed": true
+    }
+  ],
+  "failures": 0,
+  "note": "Active, warmed short walking samples on software rendering. Each setting uses the same reset route. Not a guarantee of 30 FPS on user hardware.",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "samples": [
+    {
+      "averageFps": 50.3920969278723,
+      "details": 1,
+      "lines": 168,
+      "maxMs": 47.637,
+      "medianMs": 18.97,
+      "p95Ms": 23.936,
+      "physicsActive": true,
+      "playerMoved": 15.9649848937988
+    },
+    {
+      "averageFps": 46.9205575483942,
+      "details": 1,
+      "lines": 240,
+      "maxMs": 36.342,
+      "medianMs": 20.622,
+      "p95Ms": 26.317,
+      "physicsActive": true,
+      "playerMoved": 16.1366500854492
+    },
+    {
+      "averageFps": 40.3601982281211,
+      "details": 1,
+      "lines": 360,
+      "maxMs": 37.761,
+      "medianMs": 23.925,
+      "p95Ms": 30.886,
+      "physicsActive": true,
+      "playerMoved": 15.9649848937988
+    },
+    {
+      "averageFps": 30.8307509846161,
+      "details": 1,
+      "lines": 540,
+      "maxMs": 45.322,
+      "medianMs": 31.616,
+      "p95Ms": 41.95,
+      "physicsActive": true,
+      "playerMoved": 16.1366500854492
+    },
+    {
+      "averageFps": 29.7090493764401,
+      "details": 1,
+      "lines": 648,
+      "maxMs": 153.222,
+      "medianMs": 30.192,
+      "p95Ms": 38.535,
+      "physicsActive": true,
+      "playerMoved": 15.7933177947998
+    }
+  ],
+  "window": [
+    1152,
+    648
+  ],
+  "patchSha256": "099625018891c41d01671e032147b120c59358ebe3e3092006a6ef53dfba4326",
+  "baseArchiveSha256": "9bef54e9f15e3449cd9f61db01b78860fa55c45b5ebd7217a0028417b99c4912",
+  "allFileHashesVerified": true,
+  "fixedFpsUsed": false
+}
